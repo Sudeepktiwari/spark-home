@@ -16,29 +16,27 @@ const StarRating = () => {
 const Intro = () => {
   return (
     <div>
-      <Card className="lg:flex lg:justify-between font-sans">
-        <div className="lg:m-2 mx-1 space-y-4 w-full lg:w-1/2">
-          <p className=" text-center lg:text-start text-2xl lg:text-3xl font-bold">
-            Empower Your Team <br />
+      <div className="lg:flex lg:justify-between font-sans pt-0 lg:pt-12 ">
+        <div className="lg:m-8 lg:mr-14 mx-1 space-y-4 w-full lg:w-1/2  ">
+          <p className=" text-center lg:text-start text-2xl lg:text-2xl font-bold">
+            Empower Your Team{" "}
             <span className="text-sm lg:text-2xl">
-              with an AI Agent for Exceptional
-              <span className="inline lg:block ml-1 lg:ml-0">
-                Customer Experience
-              </span>
+              with an AI Agent for Exceptional{" "}
+              <span className="inline ml-1 lg:ml-0">Customer Experience</span>
             </span>
           </p>
-          <p className="text-xs text-center lg:text-start lg:text-lg ">
+          <p className="text-xs text-center lg:text-start lg:text-sm ">
             The AI Chatbot You Can{" "}
             <span className="text-orange-500">Set Up in 1 Minute</span>—Easier
             and Faster Than Any Other!
           </p>
-          <p className="text-justify hidden lg:block ">
+          <p className="text-justify hidden lg:block text-sm pt-0 lg:pt-10">
             Quickly Build Smart AI Chatbots to Scale Your Support and Boost
             Sales. SparkAgentAI automates interactions for customer support,
             lead qualification, and more—delivering instant value from day one.
           </p>
-          <div className="lg:flex items-center gap-2 justify-around hidden my-2">
-            <Button className="w-[50%] bg-[#5555ff] hover:bg-white hover:text-black">
+          <div className="lg:flex items-center gap-2 justify-around hidden  pt-0 lg:pt-10 ">
+            <Button className="w-[50%] bg-[#5555ff] hover:bg-white hover:text-black p-5 ">
               Sign Up Free
             </Button>
             <div className="flex flex-col items-center text-center">
@@ -64,7 +62,7 @@ const Intro = () => {
             <p>Based on 10,000+ reviews</p>
           </div>
         </div>
-      </Card>
+      </div>
     </div>
   );
 };

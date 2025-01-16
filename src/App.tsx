@@ -14,7 +14,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-gray-100 flex flex-col min-h-screen">
+    <div className="min-h-screen bg-gradient-to-r from-gray-200 to-white flex flex-col">
       <div>
         <TopBar />
       </div>
