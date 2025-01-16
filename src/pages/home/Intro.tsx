@@ -1,5 +1,4 @@
 import { Card } from "@/components/ui/card";
-import React from "react";
 import img1 from "../../assets/sparkagentai-1.webp";
 import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";

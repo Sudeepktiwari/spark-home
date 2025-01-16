@@ -1,4 +1,3 @@
-import React from "react";
 import Branding from "./branding";
 import Menu from "./menu";
 import BarEnd from "./bar-end";
