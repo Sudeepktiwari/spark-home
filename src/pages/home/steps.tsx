@@ -12,9 +12,12 @@ const Steps = () => {
       <h1 className="text-center text-5xl font-bold p-10">
         Build Your Custom Chatbot in 3 Simple Steps
       </h1>
-      <div className="flex m-10 gap-20">
-        <div className=" ">
-          <div className="flex items-center gap-2">
+      <div className="flex flex-col lg:flex-row items-center m-10 gap-0 lg:gap-20 ">
+        <div className="">
+          <div className="flex lg:hidden">
+            <Skeleton className="h-[40vh] w-[100vw] lg:h-[80vh] lg:w-[60vw]" />
+          </div>
+          <div className="flex items-center gap-2 mt-6 lg:mt-0">
             <NumberCircleOne size={40} className="text-gray-500" />
             <Button
               variant={"outline"}
@@ -57,8 +60,8 @@ const Steps = () => {
             Then, get the integration code to easily add it to your website.
           </p>
         </div>
-        <div>
-          <Skeleton className="h-[400px] w-[720px]" />
+        <div className="hidden lg:flex">
+          <Skeleton className="h-[80vh] w-[60vw]" />
         </div>
       </div>
     </div>
