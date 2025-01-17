@@ -12,7 +12,7 @@ const texts = [
 ];
 
 const FeaturesBar: React.FC = () => {
-  const [visibleCount, setVisibleCount] = useState(texts.length); // Default for medium screens
+  const [visibleCount] = useState(texts.length); // Default for medium screens
 
   // Adjust visibleCount based on screen size
   useEffect(() => {
@@ -28,12 +28,12 @@ const FeaturesBar: React.FC = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden bg-black text-white text-lg py-4">
+    <div className="overflow-hidden bg-black text-white text-lg relative py-4 w-[100vw]">
       {/* Outer container with continuous scroll effect */}
       <div
         className="flex"
         style={{
-          width: "max-content", // Allow continuous scroll effect
+          width: "200%", // Allow continuous scroll effect
           animation: "scrollLeft 15s linear infinite", // Seamless continuous scrolling
         }}
       >
@@ -66,6 +66,10 @@ const FeaturesBar: React.FC = () => {
               transform: translateX(-100%);
             }
           }
+        body {
+            overflow-x: hidden; /* Prevent horizontal scroll */
+          }
+
         `}
       </style>
     </div>

@@ -3,9 +3,11 @@ import Intro from "./Intro";
 
 const Homepage = () => {
   return (
-    <div>
-      <Intro />
-      <div className="absolute overflow-hidden w-[100vw]">
+    <div className="">
+      <div className="">
+        <Intro />
+      </div>
+      <div className="">
         <FeaturesBar />
       </div>
     </div>
