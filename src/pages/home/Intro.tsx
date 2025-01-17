@@ -22,14 +22,14 @@ const Intro = () => {
         className="lg:m-8 lg:mr-14 mx-1 space-y-4 w-full lg:w-1/2"
         style={{ fontWeight: 300 }}
       >
-        <p className=" text-center lg:text-start text-2xl lg:text-[2rem]">
+        <p className=" text-center lg:text-start text-2xl lg:text-[2rem] pt-10 lg:pt-0">
           Empower Your Team{" "}
-          <span className="text-sm lg:text-[2rem]">
+          <span className="text-sm block lg:inline lg:text-[2rem]">
             with an AI Agent for Exceptional{" "}
             <span className="inline ml-1 lg:ml-0">Customer Experience</span>
           </span>
         </p>
-        <p className="text-xs text-center lg:text-start lg:text-sm ">
+        <p className="text-xs text-center py-4 lg:py-0 lg:text-start lg:text-sm ">
           The AI Chatbot You Can{" "}
           <span className="text-orange-500">Set Up in 1 Minute</span>—Easier and
           Faster Than Any Other!
@@ -60,8 +60,8 @@ const Intro = () => {
         SparkAgentAI automates interactions for customer support, lead
         qualification, and more—delivering instant value from day one.
       </p>
-      <div className="flex items-center gap-2 justify-around lg:hidden my-4">
-        <Button className="w-[50%] bg-[#5555ff] hover:bg-white hover:text-black">
+      <div className="flex items-center gap-0 justify-around lg:hidden my-4">
+        <Button className="w-[40%] bg-[#5555ff] hover:bg-white hover:text-black">
           Sign Up Free
         </Button>
         <div className="flex flex-col items-center text-center">

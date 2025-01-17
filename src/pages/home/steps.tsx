@@ -6,7 +6,10 @@ import t3 from "../../assets/t3.png";
 const Steps = () => {
   return (
     <div className="bg-white ">
-      <h1 className="text-center text-5xl p-10" style={{ fontWeight: 300 }}>
+      <h1
+        className="text-center text-3xl lg:text-5xl lg:p-10 mt-10"
+        style={{ fontWeight: 300 }}
+      >
         Build Your Custom Chatbot in 3 Simple Steps
       </h1>
       <div className="flex flex-col lg:flex-row items-center m-10 gap-0 lg:gap-20 ">
