@@ -31,9 +31,9 @@ const FeaturesBar: React.FC = () => {
     <div className="overflow-hidden bg-gray-100 text-gray-600 text-lg relative py-4 w-[100vw]">
       {/* Outer container with continuous scroll effect */}
       <div
-        className="flex"
+        className="flex w-[max-content] lg:w-[200%] "
         style={{
-          width: "200%", // Allow continuous scroll effect
+          // width: "200%", // Allow continuous scroll effect
           animation: "scrollLeft 60s linear infinite", // Seamless continuous scrolling
         }}
       >
