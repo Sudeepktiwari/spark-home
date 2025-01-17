@@ -14,7 +14,10 @@ const StarRating = () => {
 
 const Intro = () => {
   return (
-    <div className="lg:flex lg:justify-between pt-0 lg:pt-12 ">
+    <div
+      className="lg:flex lg:justify-between pt-0 lg:pt-12  bg-gradient-to-r
+     from-gray-100 to-white"
+    >
       <div className="lg:m-8 lg:mr-14 mx-1 space-y-4 w-full lg:w-1/2  ">
         <p className=" text-center lg:text-start text-2xl lg:text-[2rem] font-bold">
           Empower Your Team{" "}

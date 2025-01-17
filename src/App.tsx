@@ -9,15 +9,12 @@ function App() {
     if (link) {
       link.href = logo; // Replace with your icon path
 
-      document.title = "Home - My Custom App";
+      document.title = "Spark Agent AI";
     }
   }, []);
 
   return (
-    <div
-      className=" w-[100vw] min-h-screen bg-gradient-to-r
-     from-gray-200 to-white flex flex-col font-custom"
-    >
+    <div className=" w-[100vw] min-h-screenflex flex-col font-custom">
       <TopBar />
       <Homepage />
     </div>

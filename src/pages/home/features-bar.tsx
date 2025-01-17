@@ -28,13 +28,13 @@ const FeaturesBar: React.FC = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden bg-black text-white text-lg relative py-4 w-[100vw]">
+    <div className="overflow-hidden bg-gray-100 text-gray-600 text-lg relative py-4 w-[100vw]">
       {/* Outer container with continuous scroll effect */}
       <div
         className="flex"
         style={{
           width: "200%", // Allow continuous scroll effect
-          animation: "scrollLeft 15s linear infinite", // Seamless continuous scrolling
+          animation: "scrollLeft 60s linear infinite", // Seamless continuous scrolling
         }}
       >
         {/* Duplicated content for a smooth looping effect */}

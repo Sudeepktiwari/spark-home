@@ -1,5 +1,6 @@
 import FeaturesBar from "./features-bar";
 import Intro from "./Intro";
+import Steps from "./steps";
 
 const Homepage = () => {
   return (
@@ -10,6 +11,7 @@ const Homepage = () => {
       <div className="">
         <FeaturesBar />
       </div>
+      <Steps />
     </div>
   );
 };
