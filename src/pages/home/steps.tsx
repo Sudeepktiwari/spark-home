@@ -15,7 +15,7 @@ const Steps = () => {
       <div className="flex flex-col lg:flex-row items-center m-10 gap-0 lg:gap-20 ">
         <div className="">
           <div className="flex lg:hidden">
-            <Skeleton className="h-[40vh] w-[100vw] lg:h-[80vh] lg:w-[60vw]" />
+            <Skeleton className="h-[30vh] w-[90vw]" />
           </div>
           <div className="flex items-center gap-2 mt-6 lg:mt-0">
             <NumberCircleOne size={40} className="text-gray-500" />
