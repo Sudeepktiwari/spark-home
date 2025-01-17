@@ -9,6 +9,30 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        custom: [
+          '"Segoe UI"',
+          "SegoeUI",
+          '"Helvetica Neue"',
+          "Helvetica",
+          "Arial",
+          "sans-serif",
+        ],
+      },
+      animation: {
+        marquee: "marquee 200s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          from: { transform: "translateX(100%)" },
+          to: { transform: "translateX(-100%)" },
+        },
+      },
+
+      transitionTimingFunction: {
+        smooth: "ease-in-out",
+      },
+
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

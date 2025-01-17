@@ -2,6 +2,7 @@ import TopBar from "./components/top-bar/top-bar";
 import Homepage from "./pages/home/homepage";
 import { useEffect } from "react";
 import logo from "./assets/logo.png";
+import FeaturesBar from "./pages/home/features-bar";
 
 function App() {
   useEffect(() => {
@@ -14,11 +15,11 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-gray-200 to-white flex flex-col">
+    <div className="min-h-screen bg-gradient-to-r from-gray-200 to-white flex flex-col font-custom">
       <div>
         <TopBar />
       </div>
-      <div className="p-2">
+      <div className="">
         <Homepage />
       </div>
     </div>
