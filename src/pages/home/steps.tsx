@@ -1,27 +1,26 @@
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
-import {
-  NumberCircleOne,
-  NumberCircleThree,
-  NumberCircleTwo,
-} from "@phosphor-icons/react";
-
+import t1 from "../../assets/t1.png";
+import t2 from "../../assets/t2.png";
+import t3 from "../../assets/t3.png";
 const Steps = () => {
   return (
     <div className="bg-white ">
-      <h1 className="text-center text-5xl font-bold p-10">
+      <h1 className="text-center text-5xl p-10" style={{ fontWeight: 300 }}>
         Build Your Custom Chatbot in 3 Simple Steps
       </h1>
       <div className="flex flex-col lg:flex-row items-center m-10 gap-0 lg:gap-20 ">
-        <div className="">
+        <div className="space-y-[15px] lg:w-[30vw]">
           <div className="flex lg:hidden">
             <Skeleton className="h-[30vh] w-[90vw]" />
           </div>
           <div className="flex items-center gap-2 mt-6 lg:mt-0">
-            <NumberCircleOne size={40} className="text-gray-500" />
+            {/* <NumberCircleOne size={40} className="text-gray-500" /> */}
+            <img src={t1} alt="1" className="h-16 w-16" />
             <Button
               variant={"outline"}
-              className="font-bold text-xl py-4 rounded-full border-gray-500 hover:bg-white"
+              className=" text-xl py-4 rounded-full w-[60vw] lg:w-[20vw] border-gray-500 hover:bg-white"
+              style={{ fontWeight: 300 }}
             >
               Add Data Sources
             </Button>
@@ -31,10 +30,12 @@ const Steps = () => {
             link a website to provide your chatbot with relevant information.
           </p>
           <div className="flex items-center gap-2 mt-6">
-            <NumberCircleTwo size={40} className="text-gray-500" />
+            {/* <NumberCircleTwo size={40} className="text-gray-500" /> */}
+            <img src={t2} alt="1" className="h-16 w-16" />
             <Button
               variant={"outline"}
-              className="font-bold text-xl py-4 rounded-full border-gray-500 hover:bg-white"
+              className=" text-xl py-4 rounded-full w-[60vw] lg:w-[20vw] border-gray-500 hover:bg-white"
+              style={{ fontWeight: 300 }}
             >
               Create Your Chatbot
             </Button>
@@ -46,10 +47,13 @@ const Steps = () => {
             name.
           </p>
           <div className="flex items-center gap-2 mt-6">
-            <NumberCircleThree size={40} className="text-gray-500" />
+            {/* <NumberCircleThree size={40} className="text-gray-500" /> */}
+            <img src={t3} alt="1" className="h-16 w-16" />
+
             <Button
               variant={"outline"}
-              className="font-bold text-xl py-4 rounded-full border-gray-500 hover:bg-white"
+              className=" text-xl py-4 rounded-full w-[60vw] lg:w-[20vw]  border-gray-500 hover:bg-white"
+              style={{ fontWeight: 300 }}
             >
               Experience & Integrate
             </Button>

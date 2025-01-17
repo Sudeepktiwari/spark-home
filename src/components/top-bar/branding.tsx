@@ -6,7 +6,10 @@ const Branding = () => {
       <div className="flex flex-row items-center gap-2">
         <img src={logo} alt="Logo" className="h-10 w-10 object-contain mt-1" />
         <div>
-          <p className="text-black text-xl lg:text-2xl font-bold">
+          <p
+            className="text-black text-xl lg:text-2xl"
+            style={{ fontWeight: 300 }}
+          >
             Spark Agent AI
           </p>
         </div>

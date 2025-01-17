@@ -11,9 +11,10 @@ export default {
     extend: {
       fontFamily: {
         custom: [
-          '"Segoe UI"',
+          "Red Hat Display",
+          "Segoe UI",
           "SegoeUI",
-          '"Helvetica Neue"',
+          "Helvetica Neue",
           "Helvetica",
           "Arial",
           "sans-serif",

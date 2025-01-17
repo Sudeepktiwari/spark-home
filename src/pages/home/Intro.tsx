@@ -18,8 +18,11 @@ const Intro = () => {
       className="lg:flex lg:justify-between pt-0 lg:pt-12  bg-gradient-to-r
      from-gray-100 to-white"
     >
-      <div className="lg:m-8 lg:mr-14 mx-1 space-y-4 w-full lg:w-1/2  ">
-        <p className=" text-center lg:text-start text-2xl lg:text-[2rem] font-bold">
+      <div
+        className="lg:m-8 lg:mr-14 mx-1 space-y-4 w-full lg:w-1/2"
+        style={{ fontWeight: 300 }}
+      >
+        <p className=" text-center lg:text-start text-2xl lg:text-[2rem]">
           Empower Your Team{" "}
           <span className="text-sm lg:text-[2rem]">
             with an AI Agent for Exceptional{" "}
@@ -31,7 +34,10 @@ const Intro = () => {
           <span className="text-orange-500">Set Up in 1 Minute</span>—Easier and
           Faster Than Any Other!
         </p>
-        <p className="text-justify hidden lg:block text-sm lg:text-[1.125rem] pt-0 lg:pt-5">
+        <p
+          className="text-justify hidden lg:block text-sm lg:text-[16px] pt-0 lg:pt-5"
+          style={{ lineHeight: "22px" }}
+        >
           Quickly Build Smart AI Chatbots to Scale Your Support and Boost Sales.
           SparkAgentAI automates interactions for customer support, lead
           qualification, and more—delivering instant value from day one.
