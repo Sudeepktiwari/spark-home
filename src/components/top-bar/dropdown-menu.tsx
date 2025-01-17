@@ -1,16 +1,5 @@
 import React, { useState } from "react";
-import {
-  Settings,
-  LogOut,
-  User,
-  HelpCircle,
-  Menu,
-  X,
-  Home,
-  Info,
-  CircleDollarSign,
-  Headset,
-} from "lucide-react";
+import { Menu, X, Home, Info, CircleDollarSign, Headset } from "lucide-react";
 import BarEnd from "./bar-end";
 
 const DropdownMenu: React.FC = () => {
