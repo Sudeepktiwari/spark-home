@@ -1,4 +1,5 @@
 import FeaturesBar from "./features-bar";
+import Features from "./Features/features";
 import Footer from "./footer";
 import Intro from "./Intro";
 import Steps from "./steps";
@@ -13,6 +14,7 @@ const Homepage = () => {
         <FeaturesBar />
       </div>
       <Steps />
+      <Features />
       <Footer />
     </div>
   );
