@@ -15,27 +15,27 @@ const StarRating = () => {
 const Intro = () => {
   return (
     <div
-      className="lg:flex lg:justify-between pt-0 lg:pt-12  bg-gradient-to-r
+      className="lg:flex lg:items-center lg:justify-between px-4 pt-0 lg:pt-12  bg-gradient-to-r
      from-gray-100 to-white"
     >
       <div
         className="lg:m-8 lg:mr-14 mx-1 space-y-4 w-full lg:w-1/2"
         style={{ fontWeight: 300 }}
       >
-        <p className=" text-center lg:text-start text-2xl lg:text-[2rem] pt-10 lg:pt-0">
+        <p className=" text-center lg:text-start text-2xl lg:text-[2rem] 2xl:text-[2.5rem] leading-tight pt-10 lg:pt-0">
           Empower Your Team{" "}
-          <span className="text-sm block lg:inline lg:text-[2rem]">
+          <span className="text-sm block lg:inline lg:text-[2rem] 2xl:text-[2.5rem]">
             with an AI Agent for Exceptional{" "}
-            <span className="inline ml-1 lg:ml-0">Customer Experience</span>
+            <span className="inline">Customer Experience</span>
           </span>
         </p>
-        <p className="text-xs text-center py-4 lg:py-0 lg:text-start lg:text-sm ">
+        <p className="text-xs text-center py-4 lg:py-0 lg:text-start lg:text-sm 2xl:text-xl ">
           The AI Chatbot You Can{" "}
           <span className="text-orange-500">Set Up in 1 Minute</span>—Easier and
           Faster Than Any Other!
         </p>
         <p
-          className="text-justify hidden lg:block text-sm lg:text-[16px] pt-0 lg:pt-5"
+          className="text-justify hidden lg:block text-sm pt-0 lg:pt-5 2xl:text-lg"
           style={{ lineHeight: "22px" }}
         >
           Quickly Build Smart AI Chatbots to Scale Your Support and Boost Sales.
@@ -53,7 +53,7 @@ const Intro = () => {
         </div>
       </div>
       <div className="m-2">
-        <img src={img1} alt="Main" className="lg:h-[400px] lg:w-[800px]" />
+        <img src={img1} alt="Main" className="lg:h-[80vh] lg:w-[90vw]" />
       </div>
       <p className="text-justify block lg:hidden mx-2">
         Quickly Build Smart AI Chatbots to Scale Your Support and Boost Sales.
