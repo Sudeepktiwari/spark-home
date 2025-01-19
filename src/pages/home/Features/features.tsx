@@ -151,51 +151,7 @@ const Features = () => {
       )}
 
       {/* Initial FixedNavBar at the top */}
-      <div
-        ref={featuresBarRef}
-        className="flex justify-between my-10 bg-white w-full shadow-md h-[6vh]"
-      >
-        <div className="lg:hidden mobile-menu-container ml-4 mb-1">
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="flex items-center px-2 py-2 bg-white rounded-lg hover:bg-gray-100"
-          >
-            <span className="mx-1">{getLabel()}</span>
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
-
-          {isOpen && (
-            <div className="relative z-50 top-1 left-0 w-48 bg-white border rounded-lg shadow-lg">
-              <ul className="py-2">
-                <li
-                  className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                  onClick={() => handleNavClick(personaRef, "persona")}
-                >
-                  <UserPen size={18} />
-                  Persona
-                </li>
-                <li
-                  className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                  onClick={() =>
-                    handleNavClick(knowledgeBaseRef, "knowledgeBase")
-                  }
-                >
-                  <LibraryBig size={18} />
-                  Knowledge Base
-                </li>
-                <li
-                  className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                  onClick={() =>
-                    handleNavClick(customizationRef, "customization")
-                  }
-                >
-                  <SquarePen size={18} />
-                  Customization
-                </li>
-              </ul>
-            </div>
-          )}
-        </div>
+      <div ref={featuresBarRef} className=" my-10 bg-white w-full shadow-md">
         <div className="hidden lg:block">
           <FixedNavBar
             personaRef={personaRef}
@@ -205,10 +161,58 @@ const Features = () => {
             onSetActiveButton={handleSetActiveButton}
           />
         </div>
-        <div>
-          <Button className="flex lg:hidden bg-[#555ff] mr-4 lg:mr-6">
-            See Plans
-          </Button>
+        <div className="flex justify-between">
+          <div className="lg:hidden mobile-menu-container ml-4 mb-1">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="flex items-center px-2 py-2 bg-white rounded-lg hover:bg-gray-100"
+            >
+              <span className="mx-1">{getLabel()}</span>
+              {isOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
+            </button>
+
+            {isOpen && (
+              <div className="relative z-50 top-1 left-0 w-48 bg-white border rounded-lg shadow-lg">
+                <ul className="py-2">
+                  <li
+                    className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                    onClick={() => handleNavClick(personaRef, "persona")}
+                  >
+                    <UserPen size={18} />
+                    Persona
+                  </li>
+                  <li
+                    className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                    onClick={() =>
+                      handleNavClick(knowledgeBaseRef, "knowledgeBase")
+                    }
+                  >
+                    <LibraryBig size={18} />
+                    Knowledge Base
+                  </li>
+                  <li
+                    className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                    onClick={() =>
+                      handleNavClick(customizationRef, "customization")
+                    }
+                  >
+                    <SquarePen size={18} />
+                    Customization
+                  </li>
+                </ul>
+              </div>
+            )}
+          </div>
+
+          <div>
+            <Button className="flex lg:hidden bg-[#555ff] mr-4 lg:mr-6">
+              See Plans
+            </Button>
+          </div>
         </div>
       </div>
 
