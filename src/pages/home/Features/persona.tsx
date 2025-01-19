@@ -1,18 +1,28 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
+import { ChevronsRight } from "lucide-react";
+import t1 from "../../../assets/t1.png";
 
 const Persona = () => {
   return (
-    <div className="lg:flex p-4 items-center lg:pt-24 gap-16 lg:mr-2">
-      <Skeleton className="lg:h-[80vh] lg:w-[70vw] w-[90vw] h-[30vh] md:h-[90vh] my-10 lg:my-0 " />
-      <div className="space-y-8 m-0 lg:m-4 lg:w-[30vw] ">
-        <Button
-          variant={"outline"}
-          className=" lg:w-[25vw] px-8 text-xl 2xl:text-2xl font-light rounded-full border-gray-500 hover:bg-white"
-        >
-          Persona-Based Chatbot Creation
-        </Button>
+    <div className="lg:flex px-4 items-center lg:mt-10 mt-0 lg:gap-10 lg:mr-2">
+      <Skeleton className="lg:h-[70vh] lg:w-[50vw] w-[90vw] h-[30vh] md:h-[90vh]" />
+      <div className="space-y-8 m-0 lg:m-4 lg:w-[40vw] mt-10 lg:mt-0 ">
+        <div className="flex items-center">
+          <Button
+            variant={"outline"}
+            className=" lg:w-[25vw] px-8 text-xl 2xl:text-2xl font-light 
+            rounded-full border-gray-500 hover:bg-white z-10"
+          >
+            Persona-Based Chatbot
+          </Button>
+          <img
+            src={t1}
+            alt="1"
+            className="h-16 w-16 relative z-0 right-12 top-0.5"
+          />
+        </div>
         <p className="text-justify 2xl:text-xl">
           Build a chatbot based on different personas, including Sales, Support,
           Q&A, and RFP, to suit your business needs.
@@ -33,6 +43,9 @@ const Persona = () => {
           <Badge>RFP:</Badge> Assists with Request for Proposal inquiries,
           streamlining business communication and responses (For internal team)
         </p>
+        <Button className="text-lg lg:p-6 font-thin">
+          Get Started <ChevronsRight />
+        </Button>
       </div>
     </div>
   );
