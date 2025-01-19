@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 
-const KnowledgeBase = () => {
+const Customization = () => {
   return (
     <div className="lg:flex p-4 items-center lg:pt-24 gap-16 lg:mr-2">
       <Skeleton className="lg:h-[80vh] lg:w-[70vw] w-[90vw] h-[30vh] md:h-[90vh] my-10 lg:my-0 " />
@@ -10,17 +10,16 @@ const KnowledgeBase = () => {
           variant={"outline"}
           className=" w-[25vw] text-xl 2xl:text-2xl font-light rounded-full border-gray-500 hover:bg-white"
         >
-          AI Knowledge Base
+          Brand Customization
         </Button>
         <p className="text-justify 2xl:text-2xl">
-          Easily create a knowledge base by uploading documents, product feature
-          requirements (FRD/PRD), or adding a website URL. The system
-          automatically scrapes the website, generating help articles and FAQs
-          that can be linked to the chatbot.
+          Customize the chatbot's appearance to match your brand, including
+          color themes and personalized messaging that reflects your brand
+          values.
         </p>
       </div>
     </div>
   );
 };
 
-export default KnowledgeBase;
+export default Customization;
