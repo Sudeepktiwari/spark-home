@@ -9,7 +9,7 @@ const Persona = () => {
       <div className="space-y-8 m-0 lg:m-4 lg:w-[30vw] ">
         <Button
           variant={"outline"}
-          className=" w-[25vw] px-8 text-xl 2xl:text-2xl font-light rounded-full border-gray-500 hover:bg-white"
+          className=" lg:w-[25vw] px-8 text-xl 2xl:text-2xl font-light rounded-full border-gray-500 hover:bg-white"
         >
           Persona-Based Chatbot Creation
         </Button>
