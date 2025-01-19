@@ -6,8 +6,8 @@ import t1 from "../../../assets/t1.png";
 
 const Persona = () => {
   return (
-    <div className="lg:flex px-4 items-center lg:mt-10 mt-0 lg:gap-10 lg:mr-2">
-      <Skeleton className="lg:h-[70vh] lg:w-[50vw] w-[90vw] h-[30vh] md:h-[90vh]" />
+    <div className="lg:flex px-4 lg:mt-10 mt-0 lg:gap-10 lg:mr-2">
+      <Skeleton className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] md:h-[90vh]" />
       <div className="space-y-8 m-0 lg:m-4 lg:w-[40vw] mt-10 lg:mt-0 ">
         <div className="flex items-center">
           <Button

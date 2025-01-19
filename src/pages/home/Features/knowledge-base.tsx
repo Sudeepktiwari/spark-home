@@ -6,7 +6,7 @@ import t1 from "../../../assets/t1.png";
 const KnowledgeBase = () => {
   return (
     <div className="lg:flex p-4 lg:pt-24 gap-16 lg:mr-2">
-      <Skeleton className="lg:h-[70vh] lg:w-[50vw] w-[90vw] h-[30vh] md:h-[90vh] my-10 lg:my-0 " />
+      <Skeleton className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] md:h-[90vh] my-10 lg:my-0 " />
       <div className="space-y-8 m-0 lg:mx-4 lg:w-[40vw] ">
         <div className="flex items-center">
           <Button
