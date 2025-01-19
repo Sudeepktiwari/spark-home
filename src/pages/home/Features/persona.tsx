@@ -6,7 +6,9 @@ const Persona = () => {
     <div className="lg:flex p-4 items-center lg:pt-24 gap-20 lg:mr-2">
       <Skeleton className="lg:h-[70vh] lg:w-[80vw] w-[90vw] h-[30vh] my-10 lg:my-0 " />
       <div className="space-y-4 ">
-        <h1 className="text-2xl lg:text-4xl">Persona-Based Chatbot Creation</h1>
+        <h1 className="text-2xl lg:text-[2rem] font-light">
+          Persona-Based Chatbot Creation
+        </h1>
         <p>
           Build a chatbot based on different personas, including Sales, Support,
           Q&A, and RFP, to suit your business needs.
