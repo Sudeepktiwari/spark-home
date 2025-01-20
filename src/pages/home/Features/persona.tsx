@@ -8,7 +8,7 @@ const Persona = () => {
   return (
     <div className="lg:flex px-4 lg:mt-10 mt-0 lg:gap-10 lg:mr-2">
       <Skeleton className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] md:h-[90vh]" />
-      <div className="space-y-8 m-0 lg:m-4 lg:w-[40vw] mt-10 lg:mt-0 ">
+      <div className="space-y-6 m-0 lg:m-4 lg:w-[40vw] mt-10 lg:mt-0 ">
         <div className="flex items-center">
           <Button
             variant={"outline"}
@@ -23,11 +23,20 @@ const Persona = () => {
             className="h-16 w-16 relative z-0 right-12 top-0.5"
           />
         </div>
-        <p className="text-justify 2xl:text-xl">
-          Build a chatbot based on different personas, including Sales, Support,
-          Q&A, and RFP, to suit your business needs.
+        <p className="text-2xl font-light">
+          Tailored AI Chatbots to Suit Every Business Need
         </p>
         <p className="text-justify 2xl:text-xl">
+          Build chatbots customized for specific business roles such as Sales,
+          Support, or RFP handling. Enable sales-focused bots to drive
+          conversions, support bots to handle customer queries efficiently, and
+          RFP bots to streamline internal communications and processes.
+        </p>
+        {/* <p className="text-justify 2xl:text-xl">
+          Build a chatbot based on different personas, including Sales, Support,
+          Q&A, and RFP, to suit your business needs.
+        </p> */}
+        {/* <p className="text-justify 2xl:text-xl">
           <Badge>Sales:</Badge> Helps with product recommendations and sales
           inquiries, turning potential visitors into customers.
         </p>
@@ -42,7 +51,7 @@ const Persona = () => {
         <p className="text-justify 2xl:text-xl">
           <Badge>RFP:</Badge> Assists with Request for Proposal inquiries,
           streamlining business communication and responses (For internal team)
-        </p>
+        </p> */}
         <Button className="text-lg lg:p-6 font-thin">
           Get Started <ChevronsRight />
         </Button>

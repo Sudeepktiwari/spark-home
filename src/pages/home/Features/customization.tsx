@@ -22,10 +22,15 @@ const Customization = () => {
             className="h-16 w-16 relative z-0 right-12 top-0.5"
           />
         </div>
+        <p className="text-2xl font-light">
+          Tailor Your Chatbot to Perfectly Match Your Brand Identity
+        </p>
         <p className="text-justify 2xl:text-2xl">
-          Customize the chatbot's appearance to match your brand, including
-          color themes and personalized messaging that reflects your brand
-          values.
+          Tailor the chatbot’s appearance to align with your brand’s colors,
+          fonts, and messaging style. Deliver a consistent customer experience
+          that resonates with your brand values and voice. Customize greetings,
+          and responses to create a unique and engaging experience across all
+          customer touchpoints.
         </p>
         <Button className="text-lg lg:p-6 font-thin">
           Get Started <ChevronsRight />

@@ -2,15 +2,24 @@ import { useRef, useState, useEffect } from "react";
 import Customization from "./customization";
 import KnowledgeBase from "./knowledge-base";
 import Persona from "./persona";
-import { Menu, X, LibraryBig, SquarePen, UserPen } from "lucide-react";
+import {
+  Menu,
+  X,
+  LibraryBig,
+  SquarePen,
+  UserPen,
+  BadgeHelp,
+} from "lucide-react";
 import FixedNavBar from "./fixed-nav-bar";
 import { Button } from "@/components/ui/button";
+import Qna from "./qna";
 
 const Features = () => {
   const featuresBarRef = useRef<HTMLDivElement>(null);
   const personaRef = useRef<HTMLDivElement>(null);
   const knowledgeBaseRef = useRef<HTMLDivElement>(null);
   const customizationRef = useRef<HTMLDivElement>(null);
+  const qnaRef = useRef<HTMLDivElement>(null);
 
   const [isFeaturesNavVisible, setIsFeaturesNavVisible] = useState(false);
   const [activeButton, setActiveButton] = useState<string>("persona");
@@ -22,6 +31,7 @@ const Features = () => {
       persona: personaRef,
       knowledgeBase: knowledgeBaseRef,
       customization: customizationRef,
+      qna: qnaRef,
     }[section];
 
     if (sectionRef?.current) {
@@ -76,6 +86,8 @@ const Features = () => {
         return "Knowledge Base";
       case "customization":
         return "Customization";
+      case "qna":
+        return "QnA";
       default:
         return "";
     }
@@ -104,7 +116,7 @@ const Features = () => {
             </div>
           </div>
           {isOpen && (
-            <div className="absolute top-16 left-0 w-48 bg-white border rounded-lg shadow-lg">
+            <div className="absolute top-16 left-4 w-[25vw] z-40 bg-white border rounded-lg shadow-lg">
               <ul className="py-2">
                 <li
                   className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
@@ -120,7 +132,7 @@ const Features = () => {
                   }
                 >
                   <LibraryBig size={18} />
-                  Knowledge Base
+                  AI Knowledge Base
                 </li>
                 <li
                   className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
@@ -129,7 +141,14 @@ const Features = () => {
                   }
                 >
                   <SquarePen size={18} />
-                  Customization
+                  Brand Customization
+                </li>
+                <li
+                  className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  onClick={() => handleNavClick(qnaRef, "qna")}
+                >
+                  <BadgeHelp size={18} />
+                  Q&A Management
                 </li>
               </ul>
             </div>
@@ -144,6 +163,7 @@ const Features = () => {
             personaRef={personaRef}
             knowledgeBaseRef={knowledgeBaseRef}
             customizationRef={customizationRef}
+            qnaRef={qnaRef}
             activeButton={activeButton}
             onSetActiveButton={handleSetActiveButton}
           />
@@ -157,6 +177,7 @@ const Features = () => {
             personaRef={personaRef}
             knowledgeBaseRef={knowledgeBaseRef}
             customizationRef={customizationRef}
+            qnaRef={qnaRef}
             activeButton={activeButton}
             onSetActiveButton={handleSetActiveButton}
           />
@@ -176,7 +197,7 @@ const Features = () => {
             </button>
 
             {isOpen && (
-              <div className="relative z-50 top-1 left-0 w-48 bg-white border rounded-lg shadow-lg">
+              <div className="relative z-20 top-1 left-0 w-[25vw] bg-white border rounded-lg shadow-lg">
                 <ul className="py-2">
                   <li
                     className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
@@ -192,7 +213,7 @@ const Features = () => {
                     }
                   >
                     <LibraryBig size={18} />
-                    Knowledge Base
+                    AI Knowledge Base
                   </li>
                   <li
                     className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
@@ -201,7 +222,14 @@ const Features = () => {
                     }
                   >
                     <SquarePen size={18} />
-                    Customization
+                    Brand Customization
+                  </li>
+                  <li
+                    className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                    onClick={() => handleNavClick(qnaRef, "qna")}
+                  >
+                    <BadgeHelp size={18} />
+                    Q&A management
                   </li>
                 </ul>
               </div>
@@ -225,6 +253,9 @@ const Features = () => {
       </div>
       <div ref={customizationRef} className="min-h-screen py-20">
         <Customization />
+      </div>
+      <div ref={qnaRef} className="min-h-screen py-20">
+        <Qna />
       </div>
     </div>
   );

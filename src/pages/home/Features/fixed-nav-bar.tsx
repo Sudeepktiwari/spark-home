@@ -67,6 +67,7 @@ interface FixedNavBarProps {
   personaRef: RefObject<HTMLDivElement>;
   knowledgeBaseRef: RefObject<HTMLDivElement>;
   customizationRef: RefObject<HTMLDivElement>;
+  qnaRef: RefObject<HTMLDivElement>;
   activeButton: string;
   onSetActiveButton: (section: string) => void;
 }
@@ -99,7 +100,7 @@ const FixedNavBar: React.FC<FixedNavBarProps> = ({
           } text-lg bg-white pb-10 pt-0 text-black hover:bg-gray-100 focus:outline-none shadow-none`}
           onClick={() => onSetActiveButton("knowledgeBase")}
         >
-          Knowledge Base
+          AI Knowledge Base
         </Button>
         <Button
           className={`block rounded-none ${
@@ -109,7 +110,17 @@ const FixedNavBar: React.FC<FixedNavBarProps> = ({
           } text-lg bg-white pb-10 pt-0 text-black hover:bg-gray-100 focus:outline-none shadow-none`}
           onClick={() => onSetActiveButton("customization")}
         >
-          Customization
+          Brand Customization
+        </Button>
+        <Button
+          className={`block rounded-none ${
+            activeButton === "qna"
+              ? "border-b-4 border-blue-500 border-x-0 border-t-0"
+              : "border-none"
+          } text-lg bg-white pb-10 pt-0 text-black hover:bg-gray-100 focus:outline-none shadow-none`}
+          onClick={() => onSetActiveButton("qna")}
+        >
+          Q&A Management
         </Button>
       </div>
       <div>
