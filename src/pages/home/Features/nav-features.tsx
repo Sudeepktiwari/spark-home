@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import FixedNavBar from "./fixed-nav-bar";
+// import FixedNavBar from "./fixed-nav-bar";
 import { LibraryBig, Menu, SquarePen, UserPen, X } from "lucide-react";
 
 interface FeaturesNavProps {
@@ -14,7 +14,7 @@ const FeaturesNav: React.FC<FeaturesNavProps> = ({
   personaRef,
   knowledgeBaseRef,
   customizationRef,
-  activeButton,
+  // activeButton,
   onSetActiveButton,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -102,13 +102,14 @@ const FeaturesNav: React.FC<FeaturesNavProps> = ({
 
       {/* Desktop Navigation Bar */}
       <div className="hidden lg:block fixed top-0 left-0 w-full bg-white z-40 shadow-md">
-        <FixedNavBar
+        {/* <FixedNavBar
           personaRef={personaRef}
           knowledgeBaseRef={knowledgeBaseRef}
           customizationRef={customizationRef}
+          qnaRef={}
           activeButton={activeButton}
-          onSetActiveButton={onSetActiveButton}
-        />
+          onSetActiveButton={onSetActiveButton} 
+        />*/}
       </div>
     </div>
   );

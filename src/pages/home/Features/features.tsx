@@ -245,16 +245,16 @@ const Features = () => {
       </div>
 
       {/* Sections */}
-      <div ref={personaRef} className="min-h-screen py-20">
+      <div ref={personaRef} className="min-h-screen mt-10 py-10">
         <Persona />
       </div>
-      <div ref={knowledgeBaseRef} className="min-h-screen py-20">
+      <div ref={knowledgeBaseRef} className="min-h-screen mt-10">
         <KnowledgeBase />
       </div>
-      <div ref={customizationRef} className="min-h-screen py-20">
+      <div ref={customizationRef} className="min-h-screen mt-10">
         <Customization />
       </div>
-      <div ref={qnaRef} className="min-h-screen py-20">
+      <div ref={qnaRef} className="min-h-screen mt-10">
         <Qna />
       </div>
     </div>
