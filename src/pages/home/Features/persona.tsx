@@ -5,7 +5,7 @@ import t1 from "../../../assets/t1.png";
 
 const Persona = () => {
   return (
-    <div className="lg:flex px-4 lg:mt-10 mt-0 lg:gap-10 lg:mr-2">
+    <div className="lg:flex lg:items-center px-4 lg:mt-10 mt-0 lg:gap-10 lg:mr-2">
       <Skeleton className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] md:h-[90vh]" />
       <div className="space-y-6 m-0 lg:m-4 lg:w-[40vw] mt-10 lg:mt-0 ">
         <div className="flex items-center">
@@ -22,7 +22,7 @@ const Persona = () => {
             className="h-16 w-16 relative z-0 right-12 top-0.5"
           />
         </div>
-        <p className="text-2xl font-light">
+        <p className="text-3xl lg:text-[44px] lg:leading-tight font-light">
           Tailored AI Chatbots to Suit Every Business Need
         </p>
         <p className="text-justify 2xl:text-xl">

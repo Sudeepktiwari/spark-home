@@ -53,7 +53,7 @@ const Intro = () => {
         </div>
       </div>
       <div className="m-2">
-        <img src={img1} alt="Main" className="lg:h-[80vh] lg:w-[90vw]" />
+        <img src={img1} alt="Main" className="lg:h-[70vh] lg:w-[90vw]" />
       </div>
       <p className="text-justify block lg:hidden mx-2">
         Quickly Build Smart AI Chatbots to Scale Your Support and Boost Sales.

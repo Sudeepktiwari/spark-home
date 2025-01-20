@@ -3,16 +3,18 @@ import Customization from "./customization";
 import KnowledgeBase from "./knowledge-base";
 import Persona from "./persona";
 import {
-  Menu,
   X,
   LibraryBig,
   SquarePen,
   UserPen,
   BadgeHelp,
+  ChevronDown,
+  BotMessageSquare,
 } from "lucide-react";
 import FixedNavBar from "./fixed-nav-bar";
 import { Button } from "@/components/ui/button";
 import Qna from "./qna";
+import ConversationAnalysis from "./conversation-analysis";
 
 const Features = () => {
   const featuresBarRef = useRef<HTMLDivElement>(null);
@@ -20,6 +22,7 @@ const Features = () => {
   const knowledgeBaseRef = useRef<HTMLDivElement>(null);
   const customizationRef = useRef<HTMLDivElement>(null);
   const qnaRef = useRef<HTMLDivElement>(null);
+  const conversationRef = useRef<HTMLDivElement>(null);
 
   const [isFeaturesNavVisible, setIsFeaturesNavVisible] = useState(false);
   const [activeButton, setActiveButton] = useState<string>("persona");
@@ -32,6 +35,7 @@ const Features = () => {
       knowledgeBase: knowledgeBaseRef,
       customization: customizationRef,
       qna: qnaRef,
+      conversation: conversationRef,
     }[section];
 
     if (sectionRef?.current) {
@@ -88,6 +92,8 @@ const Features = () => {
         return "Customization";
       case "qna":
         return "QnA";
+      case "conversation":
+        return "Conversation";
       default:
         return "";
     }
@@ -96,17 +102,17 @@ const Features = () => {
     <div className="bg-gradient-to-r from-[#fef9f3] to-white">
       {/* Mobile Menu - Show when scrolled past initial nav */}
       {isFeaturesNavVisible && (
-        <div className="lg:hidden fixed top-0 left-0 pl-4 z-50 mobile-menu-container bg-white w-full">
+        <div className="lg:hidden fixed top-0 left-0 pl-4 z-50 h-[9vh] mobile-menu-container bg-white w-full">
           <div className="flex justify-between items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="flex items-center px-2 py-2 my-4 bg-white rounded-lg shadow hover:bg-gray-100"
+              className="flex items-center px-2 py-2 my-4 gap-2 bg-white rounded-lg hover:bg-gray-100"
             >
               <span className="mx-1">{getLabel()}</span>
               {isOpen ? (
                 <X className="w-6 h-6" />
               ) : (
-                <Menu className="w-6 h-6" />
+                <ChevronDown className="w-6 h-6" />
               )}
             </button>
             <div>
@@ -116,7 +122,7 @@ const Features = () => {
             </div>
           </div>
           {isOpen && (
-            <div className="absolute top-16 left-4 w-[25vw] z-40 bg-white border rounded-lg shadow-lg">
+            <div className="absolute top-16 left-4 w-[60vw] z-40 bg-white border rounded-lg shadow-lg">
               <ul className="py-2">
                 <li
                   className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
@@ -150,6 +156,15 @@ const Features = () => {
                   <BadgeHelp size={18} />
                   Q&A Management
                 </li>
+                <li
+                  className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  onClick={() =>
+                    handleNavClick(conversationRef, "conversation")
+                  }
+                >
+                  <BotMessageSquare size={18} />
+                  Conversation Analysis
+                </li>
               </ul>
             </div>
           )}
@@ -164,6 +179,7 @@ const Features = () => {
             knowledgeBaseRef={knowledgeBaseRef}
             customizationRef={customizationRef}
             qnaRef={qnaRef}
+            conversationRef={conversationRef}
             activeButton={activeButton}
             onSetActiveButton={handleSetActiveButton}
           />
@@ -178,26 +194,27 @@ const Features = () => {
             knowledgeBaseRef={knowledgeBaseRef}
             customizationRef={customizationRef}
             qnaRef={qnaRef}
+            conversationRef={conversationRef}
             activeButton={activeButton}
             onSetActiveButton={handleSetActiveButton}
           />
         </div>
         <div className="flex justify-between">
-          <div className="lg:hidden mobile-menu-container ml-4 mb-1">
+          <div className="lg:hidden mobile-menu-container ml-4 h-[7vh]">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="flex items-center px-2 py-2 bg-white rounded-lg hover:bg-gray-100"
+              className="flex items-center px-2 py-2 gap-2 bg-white rounded-lg hover:bg-gray-100"
             >
               <span className="mx-1">{getLabel()}</span>
               {isOpen ? (
                 <X className="w-6 h-6" />
               ) : (
-                <Menu className="w-6 h-6" />
+                <ChevronDown className="w-6 h-6" />
               )}
             </button>
 
             {isOpen && (
-              <div className="relative z-20 top-1 left-0 w-[25vw] bg-white border rounded-lg shadow-lg">
+              <div className="relative z-20 top-1 left-0 w-[60vw] bg-white border rounded-lg shadow-lg">
                 <ul className="py-2">
                   <li
                     className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
@@ -231,6 +248,15 @@ const Features = () => {
                     <BadgeHelp size={18} />
                     Q&A management
                   </li>
+                  <li
+                    className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                    onClick={() =>
+                      handleNavClick(conversationRef, "conversation")
+                    }
+                  >
+                    <BotMessageSquare size={18} />
+                    Conversation Analysis
+                  </li>
                 </ul>
               </div>
             )}
@@ -256,6 +282,9 @@ const Features = () => {
       </div>
       <div ref={qnaRef} className="min-h-screen mt-10">
         <Qna />
+      </div>
+      <div ref={conversationRef} className="min-h-screen mt-10">
+        <ConversationAnalysis />
       </div>
     </div>
   );

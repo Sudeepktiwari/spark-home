@@ -12,7 +12,7 @@ const DropdownMenu: React.FC = () => {
       {/* Dropdown Trigger */}
       <button
         onClick={toggleDropdown}
-        className="flex items-center px-2 py-2 mr-4 mt-1 bg-gray-100 rounded-lg shadow hover:bg-gray-200"
+        className="flex items-center px-2 py-2 mr-4 mt-1 bg-white rounded-lg hover:bg-gray-200"
       >
         {isOpen ? <X className="w-10 h-10" /> : <Menu className="w-10 h-10" />}
       </button>

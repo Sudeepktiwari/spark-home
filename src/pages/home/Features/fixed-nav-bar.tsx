@@ -6,6 +6,7 @@ interface FixedNavBarProps {
   knowledgeBaseRef: RefObject<HTMLDivElement>;
   customizationRef: RefObject<HTMLDivElement>;
   qnaRef: RefObject<HTMLDivElement>;
+  conversationRef: RefObject<HTMLDivElement>;
   activeButton: string;
   onSetActiveButton: (section: string) => void;
 }
@@ -59,6 +60,16 @@ const FixedNavBar: React.FC<FixedNavBarProps> = ({
           onClick={() => onSetActiveButton("qna")}
         >
           Q&A Management
+        </Button>
+        <Button
+          className={`block rounded-none ${
+            activeButton === "conversation"
+              ? "border-b-4 border-blue-500 border-x-0 border-t-0"
+              : "border-none"
+          } text-lg bg-white pb-10 pt-0 text-black hover:bg-gray-100 focus:outline-none shadow-none`}
+          onClick={() => onSetActiveButton("conversation")}
+        >
+          Conversation Analysis
         </Button>
       </div>
       <div>

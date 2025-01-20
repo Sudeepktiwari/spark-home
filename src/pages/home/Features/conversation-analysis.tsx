@@ -3,7 +3,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { ChevronsRight } from "lucide-react";
 import t1 from "../../../assets/t1.png";
 
-const Customization = () => {
+const ConversationAnalysis = () => {
   return (
     <div className="lg:flex lg:items-center p-4 lg:pt-24 gap-16 lg:mr-2">
       <Skeleton className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] md:h-[90vh] my-10 lg:my-0 " />
@@ -14,7 +14,7 @@ const Customization = () => {
             className=" lg:w-[25vw] text-xl 2xl:text-2xl font-light rounded-full
            border-gray-500 hover:bg-white z-10"
           >
-            Brand Customization
+            Conversation Analysis
           </Button>
           <img
             src={t1}
@@ -23,14 +23,14 @@ const Customization = () => {
           />
         </div>
         <p className="text-3xl lg:text-[44px] lg:leading-tight font-light">
-          Tailor Your Chatbot to Perfectly Match Your Brand Identity
+          Understand, Optimize, and Drive Engagement with Smart Conversation
+          Insights
         </p>
         <p className="text-justify 2xl:text-2xl">
-          Tailor the chatbot’s appearance to align with your brand’s colors,
-          fonts, and messaging style. Deliver a consistent customer experience
-          that resonates with your brand values and voice. Customize greetings,
-          and responses to create a unique and engaging experience across all
-          customer touchpoints.
+          Analyze customer interactions to extract valuable insights that help
+          refine website content and optimize the customer journey. Identify
+          trends, address common concerns, and make data-driven improvements to
+          boost engagement and conversion rates.
         </p>
         <Button className="text-lg lg:p-6 font-thin">
           Get Started <ChevronsRight />
@@ -40,4 +40,4 @@ const Customization = () => {
   );
 };
 
-export default Customization;
+export default ConversationAnalysis;

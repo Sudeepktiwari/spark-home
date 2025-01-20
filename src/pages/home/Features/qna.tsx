@@ -5,7 +5,7 @@ import t1 from "../../../assets/t1.png";
 
 const Qna = () => {
   return (
-    <div className="lg:flex p-4 lg:pt-24 gap-16 lg:mr-2">
+    <div className="lg:flex lg:items-center p-4 lg:pt-24 gap-16 lg:mr-2">
       <Skeleton className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] md:h-[90vh] my-10 lg:my-0 " />
       <div className="space-y-8 m-0 lg:mx-4 lg:w-[40vw] ">
         <div className="flex items-center">
@@ -22,7 +22,7 @@ const Qna = () => {
             className="h-16 w-16 relative z-0 right-12 top-0.5"
           />
         </div>
-        <p className="text-2xl font-light">
+        <p className="text-3xl lg:text-[44px] lg:leading-tight font-light">
           Refine, Improve, and Optimize Your Knowledge Continuously
         </p>
         <p className="text-justify 2xl:text-2xl">
