@@ -103,7 +103,8 @@ const Features = () => {
       {/* Mobile Menu - Show when scrolled past initial nav */}
       {isFeaturesNavVisible && (
         <div className="lg:hidden fixed top-0 left-0 pl-4 z-50 h-[9vh] mobile-menu-container bg-white w-full">
-          <div className="flex justify-between items-center">
+          <div className="flex items-center">
+            <div className="flex text-xl">Features: </div>
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="flex items-center px-2 py-2 my-4 gap-2 bg-white rounded-lg hover:bg-gray-100"
@@ -115,11 +116,10 @@ const Features = () => {
                 <ChevronDown className="w-6 h-6" />
               )}
             </button>
-            <div>
-              <Button className="flex lg:hidden bg-[#555ff] mr-4 lg:mr-6">
-                See Plans
-              </Button>
-            </div>
+
+            <Button className="lg:hidden bg-[#555ff] ml-auto mr-4 justify-end">
+              See Plans
+            </Button>
           </div>
           {isOpen && (
             <div className="absolute top-16 left-4 w-[60vw] z-40 bg-white border rounded-lg shadow-lg">
@@ -199,73 +199,79 @@ const Features = () => {
             onSetActiveButton={handleSetActiveButton}
           />
         </div>
-        <div className="flex justify-between">
-          <div className="lg:hidden mobile-menu-container ml-4 h-[7vh]">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="flex items-center px-2 py-2 gap-2 bg-white rounded-lg hover:bg-gray-100"
-            >
-              <span className="mx-1">{getLabel()}</span>
-              {isOpen ? (
-                <X className="w-6 h-6" />
-              ) : (
-                <ChevronDown className="w-6 h-6" />
+        <div className="flex">
+          <div
+            className="lg:hidden items-center
+            mobile-menu-container h-[7vh] w-full"
+          >
+            <div className="flex items-center mt-2 ml-4">
+              <div className="flex text-xl">Features:</div>
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="flex px-1 py-1 mx-2 h-8 gap-2 bg-white rounded-lg hover:bg-gray-100"
+              >
+                <span className="mx-1">{getLabel()}</span>
+                {isOpen ? (
+                  <X className="w-6 h-6" />
+                ) : (
+                  <ChevronDown className="w-6 h-6" />
+                )}
+              </button>
+
+              <Button className="lg:hidden bg-[#555ff] ml-auto mr-4">
+                See Plans
+              </Button>
+            </div>
+
+            <div>
+              {isOpen && (
+                <div className="relative z-20 top-1 left-0 w-[60vw] bg-white border rounded-lg shadow-lg">
+                  <ul className="py-2">
+                    <li
+                      className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                      onClick={() => handleNavClick(personaRef, "persona")}
+                    >
+                      <UserPen size={18} />
+                      Persona
+                    </li>
+                    <li
+                      className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                      onClick={() =>
+                        handleNavClick(knowledgeBaseRef, "knowledgeBase")
+                      }
+                    >
+                      <LibraryBig size={18} />
+                      AI Knowledge Base
+                    </li>
+                    <li
+                      className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                      onClick={() =>
+                        handleNavClick(customizationRef, "customization")
+                      }
+                    >
+                      <SquarePen size={18} />
+                      Brand Customization
+                    </li>
+                    <li
+                      className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                      onClick={() => handleNavClick(qnaRef, "qna")}
+                    >
+                      <BadgeHelp size={18} />
+                      Q&A management
+                    </li>
+                    <li
+                      className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                      onClick={() =>
+                        handleNavClick(conversationRef, "conversation")
+                      }
+                    >
+                      <BotMessageSquare size={18} />
+                      Conversation Analysis
+                    </li>
+                  </ul>
+                </div>
               )}
-            </button>
-
-            {isOpen && (
-              <div className="relative z-20 top-1 left-0 w-[60vw] bg-white border rounded-lg shadow-lg">
-                <ul className="py-2">
-                  <li
-                    className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                    onClick={() => handleNavClick(personaRef, "persona")}
-                  >
-                    <UserPen size={18} />
-                    Persona
-                  </li>
-                  <li
-                    className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                    onClick={() =>
-                      handleNavClick(knowledgeBaseRef, "knowledgeBase")
-                    }
-                  >
-                    <LibraryBig size={18} />
-                    AI Knowledge Base
-                  </li>
-                  <li
-                    className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                    onClick={() =>
-                      handleNavClick(customizationRef, "customization")
-                    }
-                  >
-                    <SquarePen size={18} />
-                    Brand Customization
-                  </li>
-                  <li
-                    className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                    onClick={() => handleNavClick(qnaRef, "qna")}
-                  >
-                    <BadgeHelp size={18} />
-                    Q&A management
-                  </li>
-                  <li
-                    className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                    onClick={() =>
-                      handleNavClick(conversationRef, "conversation")
-                    }
-                  >
-                    <BotMessageSquare size={18} />
-                    Conversation Analysis
-                  </li>
-                </ul>
-              </div>
-            )}
-          </div>
-
-          <div>
-            <Button className="flex lg:hidden bg-[#555ff] mr-4 lg:mr-6">
-              See Plans
-            </Button>
+            </div>
           </div>
         </div>
       </div>

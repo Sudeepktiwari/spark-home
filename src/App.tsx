@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div
-      className=" w-[100vw] min-h-screenflex flex-col"
+      className=" w-[100vw] min-h-screenflex flex-col bg-[#fef9f3]"
       style={{ fontFamily: "sans-serif" }}
     >
       <TopBar />

@@ -12,11 +12,14 @@ const StarRating = () => {
   );
 };
 
+// to-[#fffde7]
 const Intro = () => {
   return (
     <div
-      className="lg:flex lg:items-center lg:justify-between px-4 pt-0 lg:pt-12  bg-gradient-to-r
-     from-gray-100 to-white"
+      className="lg:flex lg:items-center lg:justify-between px-4 pt-0 lg:pt-12 pb-20 bg-gradient-to-b
+     from-[#ffefcb] 
+     to-[#fef9f3]
+     "
     >
       <div
         className="lg:m-8 lg:mr-14 mx-1 space-y-4 w-full lg:w-1/2"

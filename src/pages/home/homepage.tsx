@@ -1,3 +1,4 @@
+import Benefits from "./Benefits/benefits";
 import FeaturesBar from "./features-bar";
 import Features from "./Features/features";
 import Footer from "./footer";
@@ -10,11 +11,12 @@ const Homepage = () => {
       <div className="">
         <Intro />
       </div>
-      <div className="">
+      <div>
         <FeaturesBar />
       </div>
       <Steps />
       <Features />
+      <Benefits />
       <Footer />
     </div>
   );

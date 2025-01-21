@@ -5,9 +5,9 @@ import t2 from "../../assets/t2.png";
 import t3 from "../../assets/t3.png";
 const Steps = () => {
   return (
-    <div className="px-4 bg-white">
+    <div className="px-4 bg-[#fef9f3] pb-16">
       <h1
-        className="text-center text-2xl lg:text-5xl lg:p-10 mt-10 "
+        className="text-center text-2xl lg:text-5xl lg:p-16 "
         style={{ fontWeight: 300 }}
       >
         Build Your Custom Chatbot{" "}

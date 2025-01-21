@@ -5,8 +5,8 @@ import DropdownMenu from "./dropdown-menu";
 
 const TopBar = () => {
   return (
-    <div className="flex bg-white w-screen shadow-sm p-1 lg:p-2">
-      <div className="flex items-center px-2 w-full">
+    <div className="flex bg-[#ffefcb] w-screen">
+      <div className="flex items-center shadow-[0_1px_4px_rgba(0,0,0,0.1)] w-full pl-2">
         <div className="w-[60vw] lg:w-[25vw] ">
           <Branding />
         </div>
