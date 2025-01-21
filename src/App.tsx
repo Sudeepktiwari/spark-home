@@ -12,10 +12,10 @@ function App() {
       document.title = "Spark Agent AI";
     }
   }, []);
-
+  // bg - [#fef9f3];
   return (
     <div
-      className=" w-[100vw] min-h-screenflex flex-col bg-[#fef9f3]"
+      className=" w-[100vw] min-h-screenflex flex-col bg-gradient-to-r from-[#e0ffff] to-white "
       style={{ fontFamily: "sans-serif" }}
     >
       <TopBar />

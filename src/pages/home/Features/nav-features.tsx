@@ -52,7 +52,6 @@ const FeaturesNav: React.FC<FeaturesNavProps> = ({
 
   return (
     <div>
-      <div></div>
       {/* Mobile Menu */}
       <div className="lg:hidden fixed top-4 left-4 z-50 mobile-menu-container">
         <button

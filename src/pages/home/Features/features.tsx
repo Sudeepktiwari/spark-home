@@ -99,15 +99,16 @@ const Features = () => {
     }
   };
   return (
-    <div className="bg-gradient-to-r from-[#fef9f3] to-white">
+    // <div className="bg-gradient-to-r from-[#fef9f3] to-white">
+    <div className="bg-transparent">
       {/* Mobile Menu - Show when scrolled past initial nav */}
       {isFeaturesNavVisible && (
-        <div className="lg:hidden fixed top-0 left-0 pl-4 z-50 h-[9vh] mobile-menu-container bg-white w-full">
+        <div className="lg:hidden fixed top-0 left-0 pl-4 z-50 mobile-menu-container bg-white w-full">
           <div className="flex items-center">
             <div className="flex text-xl">Features: </div>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="flex items-center px-2 py-2 my-4 gap-2 bg-white rounded-lg hover:bg-gray-100"
+              className="flex items-center px-2 py-2 my-2 gap-2 bg-white rounded-lg hover:bg-gray-100"
             >
               <span className="mx-1">{getLabel()}</span>
               {isOpen ? (
@@ -202,13 +203,13 @@ const Features = () => {
         <div className="flex">
           <div
             className="lg:hidden items-center
-            mobile-menu-container h-[7vh] w-full"
+            mobile-menu-container w-full py-2"
           >
-            <div className="flex items-center mt-2 ml-4">
+            <div className="flex items-center mt-0 ml-4">
               <div className="flex text-xl">Features:</div>
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex px-1 py-1 mx-2 h-8 gap-2 bg-white rounded-lg hover:bg-gray-100"
+                className="flex px-1 py-0 mx-2 mt-1 h-[7vh] gap-2 bg-white rounded-lg hover:bg-gray-100"
               >
                 <span className="mx-1">{getLabel()}</span>
                 {isOpen ? (
