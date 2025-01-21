@@ -15,7 +15,7 @@ function App() {
   // bg - [#fef9f3];
   return (
     <div
-      className=" w-[100vw] min-h-screenflex flex-col bg-gradient-to-r from-[#E0F4FF] to-white "
+      className="scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 w-[100vw] min-h-screenflex flex-col bg-gradient-to-r from-[#E0F4FF] to-white "
       style={{ fontFamily: "sans-serif" }}
     >
       <TopBar />
