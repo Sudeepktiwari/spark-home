@@ -10,7 +10,7 @@ const Benefits = () => {
       <p className="flex justify-center text-2xl">
         Enhance Customer Engagement with Our Cutting-Edge Capabilities
       </p>
-      <div className="grid grid-cols-3 gap-4 ml-4 mr-8 !mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ml-4 mr-8 !mt-12">
         <CardComponent
           title="Boost Customer Satisfaction"
           content="Deliver instant, 24/7 support with AI-powered chat that answers, and resolves customer issues efficiently. SparkAgentAI ensures happier customers and improved retention by being always available."
