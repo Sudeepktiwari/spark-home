@@ -110,7 +110,7 @@ const Features = () => {
               onClick={() => setIsOpen(!isOpen)}
               className="flex items-center px-2 py-2 my-2 gap-2 bg-white rounded-lg hover:bg-gray-100"
             >
-              <span className="mx-1">{getLabel()}</span>
+              <span className="mx-1 font-light">{getLabel()}</span>
               {isOpen ? (
                 <X className="w-6 h-6" />
               ) : (
@@ -200,18 +200,18 @@ const Features = () => {
             onSetActiveButton={handleSetActiveButton}
           />
         </div>
-        <div className="flex">
+        <div className="flex items-center">
           <div
-            className="lg:hidden items-center
+            className="lg:hidden
             mobile-menu-container w-full py-2"
           >
             <div className="flex items-center mt-0 ml-4">
-              <div className="flex text-xl">Features:</div>
+              <div className="text-xl">Features:</div>
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex px-1 py-0 mx-2 mt-1 h-[7vh] gap-2 bg-white rounded-lg hover:bg-gray-100"
+                className="flex px-1 py-0 mx-2 mt-1 h-[4vh] gap-2 bg-white rounded-lg hover:bg-gray-100"
               >
-                <span className="mx-1">{getLabel()}</span>
+                <span className="mx-1 font-light ">{getLabel()}</span>
                 {isOpen ? (
                   <X className="w-6 h-6" />
                 ) : (

@@ -5,7 +5,7 @@ import DropdownMenu from "./dropdown-menu";
 // bg - [#ffefcb];
 const TopBar = () => {
   return (
-    <div className="flex  bg-gradient-to-r from-[#E0F4FF] to-white w-screen">
+    <div className="flex  bg-gradient-to-r from-[#E2FBE2] to-white w-screen">
       <div className="flex items-center shadow-[0_1px_4px_rgba(0,0,0,0.1)] w-full pl-2">
         <div className="w-[60vw] lg:w-[25vw] ">
           <Branding />
