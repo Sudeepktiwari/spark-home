@@ -32,7 +32,7 @@ const Intro = () => {
           className="text-xs text-center py-4 lg:py-0 lg:text-start lg:text-sm 2xl:text-xl font-light "
         >
           The AI Chatbot You Can{" "}
-          <span className="font-semibold underline underline-offset-4">
+          <span className="font-semibold underline underline-offset-4 text-orange-500">
             Set Up in 1 Minute
           </span>
           —Easier and Faster Than Any Other!
@@ -41,11 +41,8 @@ const Intro = () => {
           className="text-justify hidden lg:block text-sm pt-0 lg:pt-5 2xl:text-lg font-light"
           style={{ fontFamily: "Open Sans", lineHeight: "22px" }}
         >
-          Quickly Build Smart AI Chatbots to{" "}
-          <span className="font-semibold underline underline-offset-4">
-            Scale Your Support and Boost Sales
-          </span>
-          . SparkAgentAI automates interactions for customer support, lead
+          Quickly Build Smart AI Chatbots to Scale Your Support and Boost Sales.
+          SparkAgentAI automates interactions for customer support, lead
           qualification, and more—delivering instant value from day one.
         </p>
         <div className="lg:flex items-center gap-2 justify-around hidden  pt-0 lg:pt-5 ">
