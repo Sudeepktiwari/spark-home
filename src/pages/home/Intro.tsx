@@ -1,6 +1,9 @@
-import img1 from "../../assets/sparkagentai-1.webp";
+// import img1 from "../../assets/sparkagentai-1.webp";
 import { Button } from "@/components/ui/button";
+import Lottie from "lottie-react";
 import { Star } from "lucide-react";
+import introAnim from "../../assets/NewImages/Hero Head.json";
+import imglightbg from "../../assets/NewImages/light-mode.png";
 
 const StarRating = () => {
   return (
@@ -15,11 +18,18 @@ const StarRating = () => {
 // to-[#fffde7]
 const Intro = () => {
   return (
-    <div className="lg:flex lg:items-center lg:justify-between px-4 pt-0 lg:pt-12 pb-20 bg-transparent">
-      <div className="lg:m-8 lg:mr-14 mx-1 space-y-4 w-full lg:w-1/2">
+    <div
+      style={{
+        backgroundImage: `url(${imglightbg})`,
+      }}
+      className="lg:bg-cover lg:bg-center bg-none w-screen h-screen
+      lg:flex lg:items-center lg:gap-8 pt-0 mt-10 lg:pt-32 lg:pb-56"
+    >
+      <div className="mx-4 lg:ml-52 lg:w-[30vw]">
         <p
           style={{ fontFamily: "Roboto" }}
-          className=" text-center lg:text-start text-2xl lg:text-[2rem] 2xl:text-[2.5rem] leading-tight pt-10 lg:pt-0 font-medium"
+          className=" text-center lg:text-start text-2xl lg:text-[2rem] 2xl:text-[2.5rem] 
+          leading-tight pt-10 lg:pt-0 font-medium "
         >
           Empower Your Team{" "}
           <span className="text-sm block lg:inline lg:text-[2rem] 2xl:text-[2.5rem]">
@@ -55,8 +65,15 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      <div className="m-2">
-        <img src={img1} alt="Main" className="lg:h-[70vh] lg:w-[90vw]" />
+      <div className="lg:w-[40vw] lg:h-[60vh]">
+        <Lottie
+          autoplay
+          loop
+          animationData={introAnim}
+          className="lg:w-[50vw] lg:h-[60vh] px-4 py-4"
+          // style={{ width: "50vw", height: "70vh" }}
+        />
+        {/* <img src={img1} alt="Main" className="lg:h-[70vh] lg:w-[90vw]" /> */}
       </div>
       <p className="text-justify block lg:hidden mx-2">
         Quickly Build Smart AI Chatbots to Scale Your Support and Boost Sales.
@@ -71,6 +88,13 @@ const Intro = () => {
           <StarRating />
           <p>Based on 10,000+ reviews</p>
         </div>
+      </div>
+
+      <div
+        className="hidden w-[90vw] h-[90vh]
+      object-cover"
+      >
+        <img src={imglightbg} alt="Background" />
       </div>
     </div>
   );
