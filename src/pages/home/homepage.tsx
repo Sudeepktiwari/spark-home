@@ -1,5 +1,4 @@
 import Benefits from "./Benefits/benefits";
-import FeaturesBar from "./features-bar";
 import Features from "./Features/features";
 import Footer from "./footer";
 import Intro from "./Intro";
@@ -11,9 +10,9 @@ const Homepage = () => {
       <div className="">
         <Intro />
       </div>
-      <div>
+      {/* <div>
         <FeaturesBar />
-      </div>
+      </div> */}
       <Steps />
       <Features />
       <Benefits />
