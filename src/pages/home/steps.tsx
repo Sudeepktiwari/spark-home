@@ -3,9 +3,12 @@ import { Skeleton } from "@/components/ui/skeleton";
 import t1 from "../../assets/t1.png";
 import t2 from "../../assets/t2.png";
 import t3 from "../../assets/t3.png";
+import Lottie from "lottie-react";
+import stepsAnim from "../../assets/NewImages/3 Steps.json";
+
 const Steps = () => {
   return (
-    <div className="px-4  bg-gradient-to-r bg-transparent pb-16">
+    <div className="px-4  bg-[#eef5ff] pb-16 ">
       <h1
         className="text-center text-2xl lg:text-5xl lg:p-16 "
         style={{ fontFamily: "Roboto", fontWeight: 300 }}
@@ -14,7 +17,7 @@ const Steps = () => {
         <span className="block lg:inline">in 3 Simple Steps</span>
       </h1>
       <div className="flex flex-col lg:flex-row items-center mt-10 gap-0 lg:gap-20  ">
-        <div className="space-y-[15px] lg:w-[30vw] px-4">
+        <div className="space-y-[15px] lg:w-[30vw] ">
           <div className="flex lg:hidden justify-center">
             <Skeleton className="h-[30vh] w-[90vw]" />
           </div>
@@ -78,7 +81,13 @@ const Steps = () => {
           </p>
         </div>
         <div className="hidden lg:flex">
-          <Skeleton className="h-[80vh] w-[60vw]" />
+          <Lottie
+            autoplay
+            loop
+            animationData={stepsAnim}
+            className="lg:w-[50vw] lg:h-[70vh]"
+          />
+          {/* <Skeleton className="h-[80vh] w-[60vw]" /> */}
         </div>
       </div>
     </div>

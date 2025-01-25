@@ -26,7 +26,7 @@ const FixedNavBar: React.FC<FixedNavBarProps> = ({
             activeButton === "persona"
               ? "border-b-4 border-blue-500 border-x-0 border-t-0"
               : "border-none"
-          } text-lg bg-white pb-10 pt-0 text-black hover:bg-gray-100 focus:outline-none 
+          } bg-white pb-10 px-2 pt-0 text-black hover:bg-gray-100 focus:outline-none 
           shadow-none font-light`}
           onClick={() => onSetActiveButton("persona")}
         >
@@ -37,7 +37,7 @@ const FixedNavBar: React.FC<FixedNavBarProps> = ({
             activeButton === "knowledgeBase"
               ? "border-b-4 border-blue-500 border-x-0 border-t-0"
               : "border-none"
-          } text-lg bg-white pb-10 pt-0 text-black hover:bg-gray-100 focus:outline-none 
+          } bg-white pb-10 px-2 pt-0 text-black hover:bg-gray-100 focus:outline-none 
           shadow-none font-light`}
           onClick={() => onSetActiveButton("knowledgeBase")}
         >
@@ -48,7 +48,7 @@ const FixedNavBar: React.FC<FixedNavBarProps> = ({
             activeButton === "customization"
               ? "border-b-4 border-blue-500 border-x-0 border-t-0"
               : "border-none"
-          } text-lg bg-white pb-10 pt-0 text-black hover:bg-gray-100 focus:outline-none 
+          } bg-white pb-10 px-2 pt-0 text-black hover:bg-gray-100 focus:outline-none 
           shadow-none font-light`}
           onClick={() => onSetActiveButton("customization")}
         >
@@ -59,7 +59,7 @@ const FixedNavBar: React.FC<FixedNavBarProps> = ({
             activeButton === "qna"
               ? "border-b-4 border-blue-500 border-x-0 border-t-0"
               : "border-none"
-          } text-lg bg-white pb-10 pt-0 text-black hover:bg-gray-100 focus:outline-none 
+          } bg-white pb-10 px-2 pt-0 text-black hover:bg-gray-100 focus:outline-none 
           shadow-none font-light`}
           onClick={() => onSetActiveButton("qna")}
         >
@@ -70,7 +70,7 @@ const FixedNavBar: React.FC<FixedNavBarProps> = ({
             activeButton === "conversation"
               ? "border-b-4 border-blue-500 border-x-0 border-t-0"
               : "border-none"
-          } text-lg bg-white pb-10 pt-0 text-black hover:bg-gray-100 focus:outline-none 
+          } bg-white pb-10 px-2 pt-0 text-black hover:bg-gray-100 focus:outline-none 
           shadow-none font-light`}
           onClick={() => onSetActiveButton("conversation")}
         >
@@ -78,7 +78,7 @@ const FixedNavBar: React.FC<FixedNavBarProps> = ({
         </Button>
       </div>
       <div>
-        <Button className="bg-[#555ff] mr-4 lg:mr-6">See Plans</Button>
+        <Button className="bg-[#555ff] mr-4">See Plans</Button>
       </div>
     </div>
   );

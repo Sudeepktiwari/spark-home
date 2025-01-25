@@ -100,17 +100,17 @@ const Features = () => {
   };
   return (
     // <div className="bg-gradient-to-r from-[#fef9f3] to-white">
-    <div className="bg-transparent">
+    <div className="bg-transparent ">
       {/* Mobile Menu - Show when scrolled past initial nav */}
       {isFeaturesNavVisible && (
-        <div className="lg:hidden fixed top-0 left-0 pl-4 z-50 mobile-menu-container bg-white w-full">
+        <div className="lg:hidden fixed top-0 left-0 pl-4 z-50 mobile-menu-container w-full bg-white ">
           <div className="flex items-center">
             <div className="flex text-xl">Features: </div>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="flex items-center px-2 py-2 my-2 gap-2 bg-white rounded-lg hover:bg-gray-100"
+              className="flex items-center py-2 my-2 gap-2 bg-white rounded-lg hover:bg-gray-100"
             >
-              <span className="mx-1 font-light">{getLabel()}</span>
+              <span className=" font-light">{getLabel()}</span>
               {isOpen ? (
                 <X className="w-6 h-6" />
               ) : (
@@ -118,7 +118,7 @@ const Features = () => {
               )}
             </button>
 
-            <Button className="lg:hidden bg-[#555ff] ml-auto mr-4 justify-end">
+            <Button className="lg:hidden bg-[#555ff] ml-auto mr-10 justify-end">
               See Plans
             </Button>
           </div>
@@ -126,14 +126,14 @@ const Features = () => {
             <div className="absolute top-16 left-4 w-[60vw] z-40 bg-white border rounded-lg shadow-lg">
               <ul className="py-2">
                 <li
-                  className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  className="flex items-center gap-2  py-2 hover:bg-gray-100 cursor-pointer"
                   onClick={() => handleNavClick(personaRef, "persona")}
                 >
                   <UserPen size={18} />
                   Persona
                 </li>
                 <li
-                  className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  className="flex items-center gap-2  py-2 hover:bg-gray-100 cursor-pointer"
                   onClick={() =>
                     handleNavClick(knowledgeBaseRef, "knowledgeBase")
                   }
@@ -142,7 +142,7 @@ const Features = () => {
                   AI Knowledge Base
                 </li>
                 <li
-                  className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  className="flex items-center gap-2 py-2 hover:bg-gray-100 cursor-pointer"
                   onClick={() =>
                     handleNavClick(customizationRef, "customization")
                   }
@@ -151,14 +151,14 @@ const Features = () => {
                   Brand Customization
                 </li>
                 <li
-                  className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  className="flex items-center gap-2 py-2 hover:bg-gray-100 cursor-pointer"
                   onClick={() => handleNavClick(qnaRef, "qna")}
                 >
                   <BadgeHelp size={18} />
                   Q&A Management
                 </li>
                 <li
-                  className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  className="flex items-center gap-2 py-2 hover:bg-gray-100 cursor-pointer"
                   onClick={() =>
                     handleNavClick(conversationRef, "conversation")
                   }
@@ -188,7 +188,7 @@ const Features = () => {
       )}
 
       {/* Initial FixedNavBar at the top */}
-      <div ref={featuresBarRef} className=" my-10 bg-white w-full shadow-md">
+      <div ref={featuresBarRef} className=" my-10 shadow-md">
         <div className="hidden lg:block">
           <FixedNavBar
             personaRef={personaRef}
@@ -203,15 +203,15 @@ const Features = () => {
         <div className="flex items-center">
           <div
             className="lg:hidden
-            mobile-menu-container w-full py-2"
+            mobile-menu-container py-2 w-full"
           >
             <div className="flex items-center mt-0 ml-4">
               <div className="text-xl">Features:</div>
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex px-1 py-0 mx-2 mt-1 h-[4vh] gap-2 bg-white rounded-lg hover:bg-gray-100"
+                className="flex items-center py-0 mt-1 h-[4vh] gap-2 bg-white rounded-lg hover:bg-gray-100"
               >
-                <span className="mx-1 font-light ">{getLabel()}</span>
+                <span className="font-light ">{getLabel()}</span>
                 {isOpen ? (
                   <X className="w-6 h-6" />
                 ) : (
@@ -219,7 +219,7 @@ const Features = () => {
                 )}
               </button>
 
-              <Button className="lg:hidden bg-[#555ff] ml-auto mr-4">
+              <Button className="lg:hidden bg-[#555ff]  ml-auto mr-10">
                 See Plans
               </Button>
             </div>
@@ -229,14 +229,14 @@ const Features = () => {
                 <div className="relative z-20 top-1 left-0 w-[60vw] bg-white border rounded-lg shadow-lg">
                   <ul className="py-2">
                     <li
-                      className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                      className="flex items-center gap-2 py-2 hover:bg-gray-100 cursor-pointer"
                       onClick={() => handleNavClick(personaRef, "persona")}
                     >
                       <UserPen size={18} />
                       Persona
                     </li>
                     <li
-                      className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                      className="flex items-center gap-2 py-2 hover:bg-gray-100 cursor-pointer"
                       onClick={() =>
                         handleNavClick(knowledgeBaseRef, "knowledgeBase")
                       }
@@ -245,7 +245,7 @@ const Features = () => {
                       AI Knowledge Base
                     </li>
                     <li
-                      className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                      className="flex items-center gap-2 py-2 hover:bg-gray-100 cursor-pointer"
                       onClick={() =>
                         handleNavClick(customizationRef, "customization")
                       }
@@ -254,14 +254,14 @@ const Features = () => {
                       Brand Customization
                     </li>
                     <li
-                      className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                      className="flex items-center gap-2 py-2 hover:bg-gray-100 cursor-pointer"
                       onClick={() => handleNavClick(qnaRef, "qna")}
                     >
                       <BadgeHelp size={18} />
                       Q&A management
                     </li>
                     <li
-                      className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                      className="flex items-center gap-2 py-2 hover:bg-gray-100 cursor-pointer"
                       onClick={() =>
                         handleNavClick(conversationRef, "conversation")
                       }
@@ -276,22 +276,23 @@ const Features = () => {
           </div>
         </div>
       </div>
-
-      {/* Sections */}
-      <div ref={personaRef} className="min-h-screen mt-10 py-10">
-        <Persona />
-      </div>
-      <div ref={knowledgeBaseRef} className="min-h-screen mt-10">
-        <KnowledgeBase />
-      </div>
-      <div ref={customizationRef} className="min-h-screen mt-10">
-        <Customization />
-      </div>
-      <div ref={qnaRef} className="min-h-screen mt-10">
-        <Qna />
-      </div>
-      <div ref={conversationRef} className="min-h-screen mt-10">
-        <ConversationAnalysis />
+      <div className="px-4">
+        {/* Sections */}
+        <div ref={personaRef} className="min-h-screen mt-10 py-10">
+          <Persona />
+        </div>
+        <div ref={knowledgeBaseRef} className="min-h-screen mt-10">
+          <KnowledgeBase />
+        </div>
+        <div ref={customizationRef} className="min-h-screen mt-10">
+          <Customization />
+        </div>
+        <div ref={qnaRef} className="min-h-screen mt-10">
+          <Qna />
+        </div>
+        <div ref={conversationRef} className="min-h-screen mt-10">
+          <ConversationAnalysis />
+        </div>
       </div>
     </div>
   );

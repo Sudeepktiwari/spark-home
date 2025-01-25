@@ -23,7 +23,7 @@ const CardComponent: React.FC<CardsProps> = ({
   return (
     <div>
       <Card>
-        <CardHeader>
+        <CardHeader className="p-4 lg:p-2 ">
           <CardTitle>
             <div className="h-10 w-10 mb-4">{icon}</div>
             <div className="text-2xl">{title}</div>

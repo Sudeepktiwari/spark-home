@@ -15,8 +15,7 @@ function App() {
   // bg - [#fef9f3];
   return (
     <div
-      className="font-custom scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 
-      w-[100vw] min-h-screenflex flex-col "
+      className="font-custom"
       // style={{ fontFamily: "sans-serif" }}
     >
       <TopBar />

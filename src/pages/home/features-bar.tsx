@@ -29,7 +29,7 @@ const FeaturesBar: React.FC = () => {
 
   return (
     <div
-      className="overflow-hidden bg-transparent text-gray-600 text-lg py-4 w-[100vw] 
+      className="overflow-hidden bg-transparent text-gray-600 text-lg py-4 
     relative bottom-20
     "
     >

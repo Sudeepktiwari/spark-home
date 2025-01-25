@@ -56,7 +56,7 @@ const FeaturesNav: React.FC<FeaturesNavProps> = ({
       <div className="lg:hidden fixed top-4 left-4 z-50 mobile-menu-container">
         <button
           onClick={toggleDropdown}
-          className="flex items-center px-2 py-2 bg-white rounded-lg shadow hover:bg-gray-100"
+          className="flex items-center py-2 bg-white rounded-lg shadow hover:bg-gray-100"
         >
           {/* Display selected label */}
           {isOpen ? (
@@ -70,14 +70,14 @@ const FeaturesNav: React.FC<FeaturesNavProps> = ({
           <div className="absolute top-12 left-0 w-48 bg-white border rounded-lg shadow-lg">
             <ul className="py-2">
               <li
-                className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                className="flex items-center gap-2 py-2 hover:bg-gray-100 cursor-pointer"
                 onClick={() => handleNavClick(personaRef, "persona")}
               >
                 <UserPen size={18} />
                 Persona
               </li>
               <li
-                className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                className="flex items-center gap-2 py-2 hover:bg-gray-100 cursor-pointer"
                 onClick={() =>
                   handleNavClick(knowledgeBaseRef, "knowledgeBase")
                 }
@@ -86,7 +86,7 @@ const FeaturesNav: React.FC<FeaturesNavProps> = ({
                 Knowledge Base
               </li>
               <li
-                className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                className="flex items-center gap-2 py-2 hover:bg-gray-100 cursor-pointer"
                 onClick={() =>
                   handleNavClick(customizationRef, "customization")
                 }
@@ -100,7 +100,7 @@ const FeaturesNav: React.FC<FeaturesNavProps> = ({
       </div>
 
       {/* Desktop Navigation Bar */}
-      <div className="hidden lg:block fixed top-0 left-0 w-full bg-white z-40 shadow-md">
+      <div className="hidden lg:block fixed top-0 left-0  bg-white z-40 shadow-md">
         {/* <FixedNavBar
           personaRef={personaRef}
           knowledgeBaseRef={knowledgeBaseRef}

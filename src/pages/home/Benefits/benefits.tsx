@@ -10,14 +10,14 @@ import {
 
 const Benefits = () => {
   return (
-    <div className="mt-8 space-y-4 w-full">
-      <p className="flex text-2xl lg:text-5xl justify-center font-light mx-4">
-        Deliver <span className="mx-2 text-orange-500">Value</span> on day one
+    <div className="mt-8 lg:space-y-4 px-4">
+      <p className="flex text-2xl lg:text-5xl justify-center font-light">
+        Deliver <span className=" text-orange-500">Value</span> on day one
       </p>
-      <p className="flex mx-4 justify-center text-center lg:text-2xl">
+      <p className="flex justify-center text-center lg:text-2xl">
         Enhance Customer Engagement with Our Cutting-Edge Capabilities
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ml-4 mr-8 !mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:ml-4 !mt-12">
         <CardComponent
           title="Boost Customer Satisfaction"
           content="Deliver instant, 24/7 support with AI-powered chat that answers, 
