@@ -85,7 +85,7 @@ const Steps = () => {
             autoplay
             loop
             animationData={stepsAnim}
-            className="lg:w-[50vw] lg:h-[70vh]"
+            className="lg:w-[55vw] lg:h-[80vh] m-0 mx-0 py-0"
           />
           {/* <Skeleton className="h-[80vh] w-[60vw]" /> */}
         </div>

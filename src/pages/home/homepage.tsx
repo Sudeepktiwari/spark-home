@@ -1,3 +1,4 @@
+import Trusted from "../trustedby/trustedby";
 import Benefits from "./Benefits/benefits";
 import Features from "./Features/features";
 import Footer from "./footer";
@@ -13,6 +14,7 @@ const Homepage = () => {
       {/* <div>
         <FeaturesBar />
       </div> */}
+      <Trusted />
       <Steps />
       <Features />
       <Benefits />
