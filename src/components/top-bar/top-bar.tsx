@@ -5,14 +5,14 @@ import DropdownMenu from "./dropdown-menu";
 // bg - [#ffefcb];
 const TopBar = () => {
   return (
-    <div className="flex">
+    <div className="flex bg-black">
       <div className="flex items-center w-full">
-        <div className="w-[60vw] lg:w-[25vw]  ">
+        <div className="w-[60vw] lg:w-[25vw] text-white  ">
           <Branding />
         </div>
         <div
           className="hidden lg:flex justify-center 
-        relative right-4 lg:ml-[12vw] xl:ml-[15vw] 2xl:ml-[15vw]"
+        relative right-4 lg:ml-[12vw] xl:ml-[15vw] 2xl:ml-[15vw] text-white"
         >
           <Menu />
         </div>
