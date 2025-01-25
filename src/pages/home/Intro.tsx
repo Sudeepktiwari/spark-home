@@ -51,7 +51,10 @@ const Intro = () => {
             —Easier and Faster Than Any Other!
           </p>
           <div className=" gap-8 items-center flex lg:w-[30vw] pt-4">
-            <Button className=" bg-[#5555ff] hover:bg-white hover:text-black lg:w-[16vw] ">
+            <Button
+              className=" bg-[#5555ff] hover:bg-white hover:text-black text-[24px] 
+            lg:w-[16vw] rounded-full py-8 "
+            >
               Sign Up Free
             </Button>
             <div className="flex flex-col items-center text-center text-white ">
@@ -76,8 +79,8 @@ const Intro = () => {
         <img src={imglightbg} alt="Background" />
         </div> */}
       </div>
-      <div className="lg:flex items-center  py-10">
-        <p className="flex items-center text-lg text-center px-20">
+      <div className="lg:flex items-center  py-10 bg-black">
+        <p className="flex items-center text-lg text-center px-20 text-white ">
           Quickly Build Smart AI Chatbots to Scale Your Support and Boost Sales.
           SparkAgentAI automates interactions for customer support, lead
           qualification, and more—delivering instant value from day one.
