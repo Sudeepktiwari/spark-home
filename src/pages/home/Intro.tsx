@@ -26,7 +26,7 @@ const Intro = () => {
         // bg-[size:60%_50%]
         className="
       lg:bg-[size:98%_130%] bg-[size:100%_80%] bg-no-repeat bg-right-bottom lg:bg-center
-      lg:gap-2 lg:py-20 lg:flex items-center bg-black "
+      lg:gap-2 lg:py-20 lg:flex items-center bg-black shadow-2xl "
       >
         <div className="lg:pl-44 lg:w-[40vw] relative bottom-14 ">
           <p

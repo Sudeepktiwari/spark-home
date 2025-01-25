@@ -13,13 +13,19 @@ const Menu = () => {
         variant={"ghost"}
         className="bg-transparent text-lg p-0 hover:border-0 border-0 hover:bg-transparent focus:outline-none"
       >
-        About Us
+        Features
       </Button>
       <Button
         variant={"ghost"}
         className="bg-transparent text-lg p-0 hover:border-0 border-0 hover:bg-transparent focus:outline-none"
       >
-        Pricing
+        Security
+      </Button>
+      <Button
+        variant={"ghost"}
+        className="bg-transparent text-lg p-0 hover:border-0 border-0 hover:bg-transparent focus:outline-none"
+      >
+        Resources
       </Button>
       <Button
         variant={"ghost"}

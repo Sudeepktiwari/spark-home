@@ -11,8 +11,9 @@ const TopBar = () => {
           <Branding />
         </div>
         <div
+          // lg:ml-[12vw] xl:ml-[15vw] 2xl:ml-[15vw]
           className="hidden lg:flex justify-center 
-        relative right-4 lg:ml-[12vw] xl:ml-[15vw] 2xl:ml-[15vw] text-white"
+        relative right-4 text-white"
         >
           <Menu />
         </div>

@@ -10,8 +10,8 @@ const Branding = () => {
           className="h-15 w-15 lg:h-10 lg:w-10 object-contain mt-1"
         />
         <div>
-          <p className=" text-xl lg:text-2xl" style={{ fontWeight: 300 }}>
-            SparkAgent <span className="font-semibold">AI</span>
+          <p className=" text-xl lg:text-2xl font-semibold">
+            SparkAgent <span className="text-[26px]">AI</span>
           </p>
           <p className="text-xs block lg:hidden">
             Perfect for Growing Small{" "}
