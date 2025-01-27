@@ -1,12 +1,20 @@
 import { Button } from "@/components/ui/button";
-import { Skeleton } from "@/components/ui/skeleton";
+// import { Skeleton } from "@/components/ui/skeleton";
 import { ChevronsRight } from "lucide-react";
 import t1 from "../../../assets/t1.png";
+import Lottie from "lottie-react";
+import customizationAnim from "../../../assets/NewImages/chat summary.json";
 
 const Customization = () => {
   return (
-    <div className="lg:flex lg:items-center lg:pt-24 gap-16 ">
-      <Skeleton className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] md:h-[90vh] my-10 lg:my-0 " />
+    <div className="lg:flex lg:pt-24 gap-16 ">
+      <Lottie
+        autoplay
+        loop
+        animationData={customizationAnim}
+        className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] m-0 mx-0 py-0"
+      />
+      {/* <Skeleton className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] md:h-[90vh] my-10 lg:my-0 " /> */}
       <div className="space-y-8 lg:w-[40vw] ">
         <div className="flex items-center">
           <Button

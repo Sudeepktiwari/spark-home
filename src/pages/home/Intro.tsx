@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import Lottie from "lottie-react";
 import { Star } from "lucide-react";
 import introAnim from "../../assets/NewImages/Hero Head.json";
-import imglightbg from "../../assets/NewImages/light-mode.png";
 
 const StarRating = () => {
   return (
@@ -20,19 +19,21 @@ const Intro = () => {
   return (
     <div>
       <div
-        style={{
-          backgroundImage: `url(${imglightbg})`,
-        }}
+        style={
+          {
+            // backgroundImage: `url(${imglightbg})`,
+          }
+        }
         // bg-[size:60%_50%]
         className="
       lg:bg-[size:98%_130%] bg-[size:100%_80%] bg-no-repeat bg-right-bottom lg:bg-center
-      lg:gap-2 pb-24 lg:pt-20 lg:pb-20 lg:flex items-center bg-black shadow-2xl "
+      lg:gap-6 lg:pt-10 pb-10 lg:flex items-center bg-black shadow-2xl "
       >
-        <div className="lg:pl-44 lg:w-[40vw] lg:relative lg:bottom-14 ">
+        <div className="lg:pl-24 lg:w-[40vw]">
           <p
             style={{ fontFamily: "Roboto" }}
             className=" text-center text-white lg:text-start text-2xl lg:text-[2rem] 2xl:text-[2.5rem] 
-          leading-tight pt-10 lg:pt-0 font-medium "
+          leading-tight pt-10 relative bottom-6 lg:pt-0 font-medium "
           >
             Empower Your Team{" "}
             <span className="text-sm block lg:inline lg:text-[2rem] 2xl:text-[2.5rem]">
@@ -63,12 +64,12 @@ const Intro = () => {
             </div>
           </div>
         </div>
-        <div className="lg:w-[10vw] lg:h-[60vh] relative lg:left-16 lg:bottom-6">
+        <div className="lg:w-[20vw] lg:h-[80vh]">
           <Lottie
             autoplay
             loop
             animationData={introAnim}
-            className="lg:w-[50vw] lg:h-[60vh] w-[90vw] h-[30vh] py-4 px-4 "
+            className="lg:w-[50vw] lg:h-[90vh] w-[90vw] h-[30vh] py-4 px-4  "
           />
         </div>
 
@@ -85,7 +86,7 @@ const Intro = () => {
           SparkAgentAI automates interactions for customer support, lead
           qualification, and more—delivering instant value from day one.
         </p>
-        <div className=" justify-center gap-4 items-center flex pt-10 lg:pt-0 lg:w-[50vw]">
+        {/* <div className=" justify-center gap-4 items-center flex pt-10 lg:pt-0 lg:w-[50vw]">
           <Button className=" bg-[#5555ff] hover:bg-white hover:text-black lg:w-[20vw] ">
             Sign Up Free
           </Button>
@@ -93,7 +94,7 @@ const Intro = () => {
             <StarRating />
             <p>Based on 10,000+ reviews</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Skeleton } from "@/components/ui/skeleton";
 import t1 from "../../assets/t1.png";
 import t2 from "../../assets/t2.png";
 import t3 from "../../assets/t3.png";
@@ -8,7 +7,7 @@ import stepsAnim from "../../assets/NewImages/3 Steps.json";
 
 const Steps = () => {
   return (
-    <div className="px-4  bg-[#eef5ff] pb-16 ">
+    <div className="px-4  bg-[#eef5ff] py-10 ">
       <h1
         className="text-center text-2xl lg:text-5xl lg:p-16 "
         style={{ fontFamily: "Roboto", fontWeight: 300 }}
@@ -19,7 +18,13 @@ const Steps = () => {
       <div className="flex flex-col lg:flex-row items-center mt-10 gap-0 lg:gap-20  ">
         <div className="space-y-[15px] lg:w-[30vw] ">
           <div className="flex lg:hidden justify-center">
-            <Skeleton className="h-[30vh] w-[90vw]" />
+            <Lottie
+              autoplay
+              loop
+              animationData={stepsAnim}
+              className="w-[9 0vw] h-[30vh] m-0 mx-0 py-0"
+            />
+            {/* <Skeleton className="h-[30vh] w-[90vw]" /> */}
           </div>
           <div className="flex items-center gap-2 mt-6 lg:mt-0">
             {/* <NumberCircleOne size={40} className="text-gray-500" /> */}
