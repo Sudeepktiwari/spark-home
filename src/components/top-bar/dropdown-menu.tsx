@@ -1,5 +1,13 @@
 import React, { useState } from "react";
-import { Menu, X, Home, Info, CircleDollarSign, Headset } from "lucide-react";
+import {
+  Menu,
+  X,
+  Home,
+  Headset,
+  LayoutList,
+  ShieldCheck,
+  BookOpenText,
+} from "lucide-react";
 import BarEnd from "./bar-end";
 
 const DropdownMenu: React.FC = () => {
@@ -12,14 +20,14 @@ const DropdownMenu: React.FC = () => {
       {/* Dropdown Trigger */}
       <button
         onClick={toggleDropdown}
-        className="flex items-center  py-2 mt-1 bg-white rounded-lg hover:bg-gray-200"
+        className="flex items-center  py-2 mt-1 bg-black text-white rounded-lg hover:bg-gray-900 focus:outline-none"
       >
         {isOpen ? <X className="w-10 h-10" /> : <Menu className="w-10 h-10" />}
       </button>
 
       {/* Dropdown Content */}
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg z-50">
+        <div className="absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg z-50 p-4">
           <ul className="py-2">
             {/* Option 1: Profile */}
             <li className="flex items-center gap-2  py-2 hover:bg-gray-100 cursor-pointer">
@@ -27,16 +35,21 @@ const DropdownMenu: React.FC = () => {
               Home
             </li>
 
+            <li className="flex items-center gap-2 py-2 hover:bg-gray-100 cursor-pointer">
+              <LayoutList size={18} />
+              Features
+            </li>
+
             {/* Option 2: Settings */}
             <li className="flex items-center gap-2 py-2 hover:bg-gray-100 cursor-pointer">
-              <Info size={18} />
-              About Us
+              <ShieldCheck size={18} />
+              Security
             </li>
 
             {/* Option 3: Help */}
             <li className="flex items-center gap-2 py-2 hover:bg-gray-100 cursor-pointer">
-              <CircleDollarSign size={18} />
-              Pricing
+              <BookOpenText size={18} />
+              Resources
             </li>
 
             {/* Option 4: Logout */}

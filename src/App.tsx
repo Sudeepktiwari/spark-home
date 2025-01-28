@@ -2,6 +2,7 @@ import TopBar from "./components/top-bar/top-bar";
 import Homepage from "./pages/home/homepage";
 import { useEffect } from "react";
 import logo from "./assets/logo.png";
+import Footer from "./components/footer/footer";
 
 function App() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
     >
       <TopBar />
       <Homepage />
+      <Footer />
     </div>
   );
 }
