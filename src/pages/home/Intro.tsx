@@ -2,7 +2,9 @@
 import { Button } from "@/components/ui/button";
 import Lottie from "lottie-react";
 import { Star } from "lucide-react";
-import introAnim from "../../assets/NewImages/Hero Head.json";
+import introAnim from "../../assets/NewImages/Final-videos/Desktop-hero-head-final.json";
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const StarRating = () => {
   return (
@@ -13,9 +15,28 @@ const StarRating = () => {
     </div>
   );
 };
+const phrases = [
+  "Exceptional Customer Experience",
+  "Seamless Interactions",
+  "Effortless Conversations",
+  "AI-Powered Customer Care",
+  "Next-Level Assistance",
+  "Smart & Efficient Support",
+  "Real-Time Personalized Support",
+  "24/7 Intelligent Assistance",
+];
 
 // to-[#fffde7]
 const Intro = () => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % phrases.length);
+    }, 500);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div>
       <div
@@ -27,23 +48,33 @@ const Intro = () => {
         // bg-[size:60%_50%]
         className="
       lg:bg-[size:98%_130%] bg-[size:100%_80%] bg-no-repeat bg-right-bottom lg:bg-center
-      lg:gap-6 lg:pt-10 pb-10 lg:flex items-center bg-black shadow-2xl "
+      lg:gap-6 lg:pt-6 items-center bg-black shadow-2xl"
       >
-        <div className="lg:pl-24 lg:w-[40vw]">
+        <div className="">
           <p
-            style={{ fontFamily: "Roboto" }}
-            className=" text-center text-white lg:text-start text-2xl lg:text-[2rem] 2xl:text-[2.5rem] 
-          leading-tight pt-10 relative bottom-6 lg:pt-0 font-medium "
+            className=" text-center text-white text-2xl lg:text-[74px] leading-normal
+          pt-8 font-medium"
           >
             Empower Your Team{" "}
-            <span className="text-sm block lg:inline lg:text-[2rem] 2xl:text-[2.5rem]">
-              with an AI Agent for Exceptional{" "}
-              <span className="inline">Customer Experience</span>
+            <span className="text-sm block lg:text-[52px] leading-relaxed justify-start font-medium">
+              with an AI Agent for{" "}
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={phrases[index]}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.8 }}
+                  className="block text-orange-400"
+                >
+                  {phrases[index]}
+                </motion.span>
+              </AnimatePresence>
             </span>
           </p>
           <p
-            style={{ fontFamily: "Open Sans" }}
-            className="text-xs text-center text-white py-4 pt-8 lg:text-start lg:text-sm 2xl:text-xl font-light "
+            className="text-xs text-center text-white py-5 lg:text-[16px] leading-loose 
+          2xl:text-xl font-light"
           >
             The AI Chatbot You Can{" "}
             <span className="font-semibold underline underline-offset-4 text-orange-500">
@@ -51,25 +82,25 @@ const Intro = () => {
             </span>
             —Easier and Faster Than Any Other!
           </p>
-          <div className=" gap-8 items-center hidden lg:flex lg:w-[30vw] pt-4">
-            <Button
-              className=" bg-[#5555ff] hover:bg-white hover:text-black text-[24px] 
+        </div>
+        <div className=" gap-8 items-center justify-center hidden lg:flex pt-4">
+          <Button
+            className=" bg-[#5555ff] hover:bg-white hover:text-black text-[24px] 
             lg:w-[16vw] rounded-full py-8 "
-            >
-              Sign Up Free
-            </Button>
-            <div className="flex flex-col items-center text-center text-white ">
-              <StarRating />
-              <p>Based on 10,000+ reviews</p>
-            </div>
+          >
+            Sign Up Now
+          </Button>
+          <div className="flex flex-col items-center text-center text-white ">
+            <StarRating />
+            <p>Based on 10,000+ reviews</p>
           </div>
         </div>
-        <div className="lg:w-[20vw] lg:h-[80vh]">
+        <div className="lg:w-[98vw] lg:h-[100vh]">
           <Lottie
             autoplay
             loop
             animationData={introAnim}
-            className="lg:w-[50vw] lg:h-[90vh] w-[90vw] h-[30vh] py-4 px-4  "
+            className="lg:w-[98vw] lg:h-[100vh] w-[90vw] h-[30vh] pt-5"
           />
         </div>
 

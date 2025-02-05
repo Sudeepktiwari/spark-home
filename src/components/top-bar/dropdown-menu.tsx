@@ -7,13 +7,16 @@ import {
   LayoutList,
   ShieldCheck,
   BookOpenText,
+  CircleHelp,
 } from "lucide-react";
 import BarEnd from "./bar-end";
+import { useNavigate } from "react-router-dom";
 
 const DropdownMenu: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleDropdown = () => setIsOpen(!isOpen);
+
+  const navigate = useNavigate();
 
   return (
     <div className=" relative inline-block lg:hidden text-left">
@@ -56,6 +59,13 @@ const DropdownMenu: React.FC = () => {
             <li className="flex items-center gap-2 py-2 hover:bg-gray-100 cursor-pointer">
               <Headset size={18} />
               Contact Us
+            </li>
+            <li
+              className="flex items-center gap-2 py-2 hover:bg-gray-100 cursor-pointer"
+              onClick={() => navigate("/faq")}
+            >
+              <CircleHelp size={18} />
+              FAQ
             </li>
             {/* <li className="flex items-center gap-2  py-2 text-red-500 hover:bg-gray-100 cursor-pointer">
               <LogOut size={18} />

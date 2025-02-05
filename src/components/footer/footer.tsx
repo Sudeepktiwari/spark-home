@@ -40,7 +40,7 @@ const Footer = () => {
         <p>Conversation Analysis</p>
       </div> */}
 
-      <div className="flex flex-col lg:flex-row pt-10 lg:justify-around w-full lg:w-auto items-center">
+      <div className="flex flex-row pt-10 justify-around w-full lg:w-auto items-center">
         <div className="flex flex-col lg:pl-0">
           <p className="font-semibold pb-2">Menu</p>
           <p>Home</p>
@@ -57,12 +57,24 @@ const Footer = () => {
           <p>Q&A Management</p>
           <p>Conversation Analysis</p>
         </div>
-        <div className="flex flex-row lg:flex-col pl-0 lg:pl-4 space-y-2 justify-center">
+        <div className="flex flex-col pl-0 lg:pl-4 space-y-2 justify-center">
           <p className="font-semibold">Social Media</p>
-          <Instagram />
-          <Youtube />
-          <Facebook />
-          <Github />
+          <div className="flex gap-2">
+            <Instagram />
+            <p>Instagram</p>
+          </div>
+          <div className="flex gap-2">
+            <Youtube />
+            <p>Youtube</p>
+          </div>
+          <div className="flex gap-2">
+            <Facebook />
+            <p>facebook</p>
+          </div>
+          <div className="flex gap-2">
+            <Github />
+            <p>Github</p>
+          </div>
         </div>
       </div>
     </div>
