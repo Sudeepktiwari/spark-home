@@ -5,7 +5,7 @@ const Menu = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="space-x-6 lg:pl-4 ">
+    <div className="space-x-12 lg:pl-4 ">
       <Button
         variant={"ghost"}
         className="bg-transparent p-0 text-[14px] leading-5 hover:border-0 border-0 hover:bg-transparent

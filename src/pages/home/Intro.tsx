@@ -17,7 +17,7 @@ const StarRating = () => {
 };
 const phrases = [
   "empower your team",
-  "enhance Customer Experience",
+  "enhance customer experience",
   "win more RFPs",
 ];
 
@@ -50,7 +50,7 @@ const Intro = () => {
             className=" text-center text-white text-2xl lg:text-[74px] font-bold leading-normal
           pt-8"
           >
-            <span className="text-[74px] leading-[1.2] font-bold text-white text-center tracking-wide">
+            <span className="text-2xl lg:text-[74px] leading-[1.2] font-bold text-white text-center tracking-wide">
               AI agents to{" "}
               <AnimatePresence mode="wait">
                 <motion.span
@@ -77,7 +77,7 @@ const Intro = () => {
             —Easier and Faster Than Any Other!
           </p>
         </div>
-        <div className=" gap-8 items-center justify-center hidden lg:flex pt-4">
+        <div className=" gap-8 items-center justify-center hidden lg:flex pt-4 ">
           <Button
             className=" bg-[#5555ff] hover:bg-white hover:text-black text-[24px] 
             lg:w-[16vw] rounded-full py-8 "
