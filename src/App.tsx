@@ -30,7 +30,11 @@ function App() {
   }, []);
 
   return (
-    <div className="main-body" style={{ fontFamily: "sans-serif" }}>
+    <div
+      className="main-body"
+      style={{ fontFamily: "Trebuchet MS, sans-serif" }}
+      // style={{ fontFamily: "Manrope,sans-serif" }}
+    >
       <TopBar />
       <Routes>
         <Route path="/" element={<Homepage />} />

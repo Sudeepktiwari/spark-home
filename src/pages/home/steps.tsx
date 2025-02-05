@@ -10,7 +10,7 @@ const Steps = () => {
     <div className="px-4  bg-[#eef5ff] py-10 ">
       <h1
         className="text-center text-2xl lg:text-5xl lg:p-16 "
-        style={{ fontFamily: "Roboto", fontWeight: 300 }}
+        style={{ fontWeight: 300 }}
       >
         Build Your Custom Chatbot{" "}
         <span className="block lg:inline">in 3 Simple Steps</span>
@@ -32,15 +32,12 @@ const Steps = () => {
             <Button
               variant={"outline"}
               className=" text-xl py-4 rounded-full w-[60vw] lg:w-[20vw] border-gray-500 hover:bg-white 2xl:text-2xl"
-              style={{ fontFamily: "Roboto", fontWeight: 300 }}
+              style={{ fontWeight: 300 }}
             >
               Add Data Sources
             </Button>
           </div>
-          <p
-            style={{ fontFamily: "Open Sans" }}
-            className="text-justify 2xl:text-xl"
-          >
+          <p className="2xl:text-xl pl-4">
             Start by creating your knowledge base. Upload files, input text, or
             link a website to provide your chatbot with relevant information.
           </p>
@@ -50,16 +47,13 @@ const Steps = () => {
             <Button
               variant={"outline"}
               className=" text-xl py-4 rounded-full w-[60vw] lg:w-[20vw] border-gray-500 hover:bg-white 2xl:text-2xl"
-              style={{ fontFamily: "Roboto", fontWeight: 300 }}
+              style={{ fontWeight: 300 }}
             >
               Create Your Chatbot
             </Button>
           </div>
 
-          <p
-            style={{ fontFamily: "Open Sans" }}
-            className="text-justify 2xl:text-xl"
-          >
+          <p className="2xl:text-xl pl-4">
             Configure your AI chatbot’s personality. Choose from available
             personas—like a Sales Assistant or Support Agent—and personalize its
             name.
@@ -71,16 +65,13 @@ const Steps = () => {
             <Button
               variant={"outline"}
               className=" text-xl py-4 rounded-full w-[60vw] lg:w-[20vw]  border-gray-500 hover:bg-white 2xl:text-2xl"
-              style={{ fontFamily: "Roboto", fontWeight: 300 }}
+              style={{ fontWeight: 300 }}
             >
               Experience & Integrate
             </Button>
           </div>
 
-          <p
-            style={{ fontFamily: "Open Sans" }}
-            className="text-justify 2xl:text-xl"
-          >
+          <p className="2xl:text-xl pl-4">
             Interact with your chatbot by asking questions and rating responses.
             Then, get the integration code to easily add it to your website.
           </p>
