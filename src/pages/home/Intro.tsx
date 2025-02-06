@@ -48,9 +48,12 @@ const Intro = () => {
         <div className="">
           <p
             className=" text-center text-white text-2xl lg:text-[74px] font-bold leading-normal
-          pt-8"
+          pt-8 min-h-40"
           >
-            <span className="text-2xl lg:text-[74px] leading-[1.2] font-bold text-white text-center tracking-wide">
+            <span
+              className="text-[35px] lg:text-[74px] leading-[1.2] font-bold 
+            text-white text-center tracking-wide "
+            >
               AI agents to{" "}
               <AnimatePresence mode="wait">
                 <motion.span
@@ -59,7 +62,8 @@ const Intro = () => {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.8 }}
-                  className="block bg-gradient-to-b from-gray-400 to-white bg-clip-text text-transparent"
+                  className="block bg-gradient-to-b from-gray-400 to-white 
+                  bg-clip-text text-transparent"
                 >
                   {phrases[index]}
                 </motion.span>
@@ -67,7 +71,7 @@ const Intro = () => {
             </span>
           </p>
           <p
-            className="text-xs text-center text-white py-8 lg:text-[16px] leading-loose 
+            className="text-sm text-center text-white p-8 lg:text-[16px] leading-loose 
           2xl:text-xl font-light"
           >
             The AI Chatbot You Can{" "}
@@ -77,10 +81,10 @@ const Intro = () => {
             —Easier and Faster Than Any Other!
           </p>
         </div>
-        <div className=" gap-8 items-center justify-center hidden lg:flex pt-4 ">
+        <div className=" gap-4 lg:gap-8 items-center justify-center flex p-8 ">
           <Button
             className=" bg-[#5555ff] hover:bg-white hover:text-black text-[24px] 
-            lg:w-[16vw] rounded-full py-8 "
+            lg:w-[16vw] rounded-full lg:py-8 py-6 px-4 "
           >
             Sign Up Now
           </Button>
@@ -106,7 +110,7 @@ const Intro = () => {
         </div> */}
       </div>
       <div className="lg:flex items-center py-10 bg-black">
-        <p className="flex items-center text-lg text-justify lg:text-center px-4 lg:px-20 text-white ">
+        <p className="flex items-center text-sm text-center px-4 lg:px-20 text-white ">
           Quickly Build Smart AI Chatbots to Scale Your Support and Boost Sales.
           SparkAgentAI automates interactions for customer support, lead
           qualification, and more—delivering instant value from day one.
