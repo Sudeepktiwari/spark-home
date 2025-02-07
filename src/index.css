@@ -59,7 +59,7 @@ button:focus-visible {
 }
 @layer components {
   .footer-col-options {
-    @apply space-y-4; /* Padding applied globally to footer-col */
+    @apply space-y-2 lg:space-y-4; /* Padding applied globally to footer-col */
   }
 }
 @media (prefers-color-scheme: light) {

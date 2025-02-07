@@ -43,8 +43,8 @@ const Footer = () => {
       </div> */}
 
       <div className="grid grid-cols-2 lg:flex lg:flex-row pt-10 px-6 justify-around w-full lg:w-auto items-center">
-        <div className="footer-col navigation flex flex-col lg:pl-0">
-          <p className="font-semibold text-lg pb-2">Menu</p>
+        <div className="footer-col navigation flex flex-col lg:pl-0 relative bottom-6 lg:bottom-0">
+          <p className="font-semibold text-lg pb-4">Menu</p>
           <div className="footer-col-options">
             <p>Home</p>
             <p>Features</p>
@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-col features flex flex-col lg:pl-0">
-          <p className="font-semibold text-lg pb-2">Features</p>
+          <p className="font-semibold text-lg pb-4">Features</p>
           <div className="footer-col-options">
             <p>Persona-based Chatbot</p>
             <p>AI Knowledge Base</p>
@@ -64,7 +64,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-col features flex flex-col lg:pl-0 lg:relative lg:bottom-8">
-          <p className="font-semibold text-lg pb-2 mt-5 lg:mt-0">Legal</p>
+          <p className="font-semibold text-lg pb-4 mt-5 lg:mt-0">Legal</p>
           <div className="footer-col-options">
             <p>Privacy Policy</p>
             <p>Terms of use</p>
@@ -73,8 +73,8 @@ const Footer = () => {
             <p></p>
           </div>
         </div>
-        <div className="footer-col social-media flex flex-col pt-4 lg:pl-4 justify-center lg:relative lg:bottom-6">
-          <p className="font-semibold text-lg pb-2 mt-5 lg:mt-0">
+        <div className="footer-col social-media flex flex-col pt-4 lg:pl-4 justify-center lg:relative lg:bottom-7">
+          <p className="font-semibold text-lg pb-4 mt-7 lg:mt-0">
             Social Media
           </p>
           <div className="footer-col-options">
