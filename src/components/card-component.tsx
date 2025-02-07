@@ -23,11 +23,12 @@ const CardComponent: React.FC<CardsProps> = ({
   return (
     <div>
       <Card>
-        <CardHeader className="p-4 lg:p-2 ">
-          <CardTitle>
+        <CardHeader className="p-4 lg:p-2">
+          <CardTitle className="pl-4 !font-normal">
             <div className="h-10 w-10 mb-4">{icon}</div>
             <div className="text-2xl">{title}</div>
           </CardTitle>
+
           <CardDescription>{subtitle}</CardDescription>
         </CardHeader>
         <CardContent className="text-justify">{content}</CardContent>

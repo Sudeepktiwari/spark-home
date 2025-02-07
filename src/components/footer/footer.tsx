@@ -6,9 +6,9 @@ import { Separator } from "../ui/separator";
 
 const Footer = () => {
   return (
-    <div className="bg-slate-200 mt-10 py-10 w-full">
-      <div className="flex flex-col lg:flex-row h-full py-20">
-        <div className="flex justify-center lg:justify-start w-full">
+    <div className="bg-black mt-10 py-10 w-full text-white">
+      <div className="flex flex-col lg:flex-row h-full lg:py-20 py-10">
+        <div className="flex pb-10 lg:pb-0 pl-4 lg:justify-start w-full">
           <Branding />
         </div>
         <div className="lg:w-[50vw] lg:pr-10 lg:px-0 px-4 pt-4 lg:pt-0 ">
@@ -19,13 +19,13 @@ const Footer = () => {
               placeholder="Enter your email address"
               className="bg-white"
             />
-            <Button>Subscribe</Button>
+            <Button className="bg-[#5555ff]">Subscribe</Button>
           </div>
         </div>
       </div>
       <Separator
         decorative
-        className="border border-gray-300 w-[80%] justify-center ml-[10%]"
+        className="border border-gray-300 w-[86%] justify-center ml-[7%]"
       />
       {/*       
       <div className="hidden lg:flex flex-col pl-4 lg:pl-0">
@@ -45,9 +45,9 @@ const Footer = () => {
         <p>Conversation Analysis</p>
       </div> */}
 
-      <div className="grid grid-cols-2 lg:flex lg:flex-row pt-10 pl-4 justify-around w-full lg:w-auto items-center">
+      <div className="grid grid-cols-2 lg:flex lg:flex-row pt-10 px-6 justify-around w-full lg:w-auto items-center">
         <div className="footer-col navigation flex flex-col lg:pl-0">
-          <p className="font-semibold pb-2">Menu</p>
+          <p className="font-semibold text-lg pb-2">Menu</p>
           <div className="footer-col-options">
             <p>Home</p>
             <p>Features</p>
@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-col features flex flex-col lg:pl-0">
-          <p className="font-semibold pb-2">Features</p>
+          <p className="font-semibold text-lg pb-2">Features</p>
           <div className="footer-col-options">
             <p>Persona-based Chatbot</p>
             <p>AI Knowledge Base</p>
@@ -67,17 +67,19 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-col features flex flex-col lg:pl-0 lg:relative lg:bottom-8">
-          <p className="font-semibold pb-2">Legal</p>
+          <p className="font-semibold text-lg pb-2 mt-5 lg:mt-0">Legal</p>
           <div className="footer-col-options">
             <p>Privacy Policy</p>
             <p>Terms of use</p>
-            <p>Acceptable usage policy</p>
+            <p>Usage policy</p>
             <p></p>
             <p></p>
           </div>
         </div>
         <div className="footer-col social-media flex flex-col pt-4 lg:pl-4 justify-center lg:relative lg:bottom-6">
-          <p className="font-semibold pb-2">Social Media</p>
+          <p className="font-semibold text-lg pb-2 mt-5 lg:mt-0">
+            Social Media
+          </p>
           <div className="footer-col-options">
             <div className="flex gap-2">
               <Instagram />
@@ -98,6 +100,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <Separator
+        decorative
+        className="border border-gray-300 w-[86%] justify-center ml-[7%] my-10"
+      />
     </div>
   );
 };

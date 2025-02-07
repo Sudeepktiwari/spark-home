@@ -25,7 +25,11 @@ const DropdownMenu: React.FC = () => {
         onClick={toggleDropdown}
         className="flex items-center  py-2 mt-1 bg-black text-white rounded-lg hover:bg-gray-900 focus:outline-none"
       >
-        {isOpen ? <X className="w-10 h-10" /> : <Menu className="w-10 h-10" />}
+        {isOpen ? (
+          <X className="w-8 h-8" />
+        ) : (
+          <Menu className="w-8 h-8 font-thin" />
+        )}
       </button>
 
       {/* Dropdown Content */}

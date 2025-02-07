@@ -7,7 +7,7 @@ const TopBar = () => {
   return (
     <div className="flex bg-black ">
       <div className="flex items-center w-full">
-        <div className="w-[60vw] lg:w-[25vw] text-white  ">
+        <div className="w-[70vw] lg:w-[25vw] text-white pl-4 pb-2">
           <Branding />
         </div>
         <div

@@ -45,9 +45,17 @@ const Features = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (featuresBarRef.current) {
-        const rect = featuresBarRef.current.getBoundingClientRect();
-        setIsFeaturesNavVisible(rect.top < 0);
+      if (featuresBarRef.current && conversationRef.current) {
+        const featuresRect = featuresBarRef.current.getBoundingClientRect();
+        const conversationRect =
+          conversationRef.current.getBoundingClientRect();
+
+        setIsFeaturesNavVisible(featuresRect.top < 0);
+        if (featuresRect.top < 0 && conversationRect.bottom > 0) {
+          setIsFeaturesNavVisible(true);
+        } else {
+          setIsFeaturesNavVisible(false);
+        }
       }
     };
 

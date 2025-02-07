@@ -213,9 +213,9 @@ const ScrollingBanner = () => {
   ];
 
   return (
-    <div className="w-full bg-gray-100 h-12 text-gray-500 relative overflow-hidden">
+    <div className="w-full bg-gray-300 h-12 text-gray-500 relative overflow-hidden">
       {/* Left fade gradient */}
-      <div className="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-gray-100 to-transparent z-10"></div>
+      <div className="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-gray-300 to-transparent z-10"></div>
 
       {/* Scrolling content */}
       <div
@@ -235,7 +235,7 @@ const ScrollingBanner = () => {
       </div>
 
       {/* Right fade gradient */}
-      <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-gray-100 to-transparent z-10"></div>
+      <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-gray-300 to-transparent z-10"></div>
     </div>
   );
 };
