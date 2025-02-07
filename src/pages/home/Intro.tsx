@@ -104,7 +104,7 @@ const Intro = () => {
           </div>
         </div>
         <div className="py-10 justify-center flex">
-          <Skeleton className="w-[90vw] h-[30vh] lg:h-[90vh] bg-gray-700" />
+          <Skeleton className="w-[88vw] lg:w-[90vw] h-[30vh] lg:h-[90vh] bg-gray-700" />
         </div>
         {/* <div className="lg:w-[98vw] lg:h-[100vh]">
           <Lottie

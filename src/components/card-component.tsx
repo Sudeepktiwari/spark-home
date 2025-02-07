@@ -23,10 +23,10 @@ const CardComponent: React.FC<CardsProps> = ({
   return (
     <div>
       <Card>
-        <CardHeader className="p-4 lg:p-2">
+        <CardHeader className="px-2 pt-4">
           <CardTitle className="pl-4 !font-normal">
-            <div className="h-10 w-10 mb-4">{icon}</div>
-            <div className="text-2xl">{title}</div>
+            <div className="h-14 w-14 mb-8">{icon}</div>
+            <div className="text-2xl mb-2">{title}</div>
           </CardTitle>
 
           <CardDescription>{subtitle}</CardDescription>

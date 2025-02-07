@@ -23,10 +23,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <Separator
-        decorative
-        className="border border-gray-300 w-[86%] justify-center ml-[7%]"
-      />
+      <Separator decorative className="w-[80%] ml-[10%]" />
       {/*       
       <div className="hidden lg:flex flex-col pl-4 lg:pl-0">
         <p className="font-semibold pb-2">Menu</p>
@@ -100,10 +97,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <Separator
-        decorative
-        className="border border-gray-300 w-[86%] justify-center ml-[7%] my-10"
-      />
+      <Separator decorative className="w-[80%] ml-[10%] my-10" />
     </div>
   );
 };
