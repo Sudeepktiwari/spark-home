@@ -5,9 +5,9 @@ import DropdownMenu from "./dropdown-menu";
 // bg - [#ffefcb];
 const TopBar = () => {
   return (
-    <div className="flex bg-black ">
+    <div className="flex bg-black">
       <div className="flex items-center w-full">
-        <div className="w-[70vw] lg:w-[25vw] text-white pl-4 pb-2">
+        <div className="w-[80vw] lg:w-[25vw] text-white pl-4 pb-2">
           <Branding />
         </div>
         <div
@@ -19,7 +19,7 @@ const TopBar = () => {
         <div className="lg:flex hidden absolute right-4 ">
           <BarEnd />
         </div>
-        <div className="ml-auto ">
+        <div className=" ">
           <DropdownMenu />
         </div>
       </div>

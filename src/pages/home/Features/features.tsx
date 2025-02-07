@@ -108,7 +108,7 @@ const Features = () => {
   };
   return (
     // <div className="bg-gradient-to-r from-[#fef9f3] to-white">
-    <div className="bg-transparent ">
+    <div className="bg-transparent w-[98vw] lg:w-auto ">
       {/* Mobile Menu - Show when scrolled past initial nav */}
       {isFeaturesNavVisible && (
         <div className="lg:hidden fixed top-0 left-0 pl-4 z-50 mobile-menu-container w-full bg-white ">

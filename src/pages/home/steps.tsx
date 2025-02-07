@@ -22,7 +22,7 @@ const Steps = () => {
               autoplay
               loop
               animationData={stepsAnim}
-              className="w-[9 0vw] h-[30vh] m-0 mx-0 py-0"
+              className="w-[90vw] h-[30vh] m-0 mx-0 py-0"
             />
             {/* <Skeleton className="h-[30vh] w-[90vw]" /> */}
           </div>

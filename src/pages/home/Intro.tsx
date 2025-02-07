@@ -91,10 +91,10 @@ const Intro = () => {
             —Easier and Faster Than Any Other!
           </p>
         </div>
-        <div className=" gap-4 lg:gap-8 items-center justify-center flex px-6 lg:py-8 lg:px-8 ">
+        <div className=" gap-2 lg:gap-8 items-center justify-center flex px-6 lg:py-8 lg:px-8 ">
           <Button
             className=" bg-[#5555ff] hover:bg-white hover:text-black text-[24px] 
-            lg:w-[16vw] rounded-md lg:py-8 py-6 px-4 "
+            lg:w-[16vw] rounded-md lg:py-8 py-6 px-2 "
           >
             Sign Up Now
           </Button>
@@ -104,7 +104,7 @@ const Intro = () => {
           </div>
         </div>
         <div className="py-10 justify-center flex">
-          <Skeleton className="w-[88vw] lg:w-[90vw] h-[30vh] lg:h-[90vh] bg-gray-700" />
+          <Skeleton className="w-[90vw] lg:w-[90vw] h-[30vh] lg:h-[90vh] bg-gray-700" />
         </div>
         {/* <div className="lg:w-[98vw] lg:h-[100vh]">
           <Lottie
