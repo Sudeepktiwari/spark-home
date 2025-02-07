@@ -32,7 +32,7 @@ function App() {
   return (
     <div
       className="main-body"
-      style={{ fontFamily: "Trebuchet MS, sans-serif" }}
+      style={{ fontFamily: "Trebuchet MS" }}
       // style={{ fontFamily: "Manrope,sans-serif" }}
     >
       <TopBar />
