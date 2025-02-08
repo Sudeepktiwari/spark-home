@@ -5,7 +5,7 @@ import { Star } from "lucide-react";
 import introAnim from "../../assets/cursorful-video-1738917820781.mp4";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Skeleton } from "@/components/ui/skeleton";
+// import { Skeleton } from "@/components/ui/skeleton";
 
 const StarRating = () => {
   return (

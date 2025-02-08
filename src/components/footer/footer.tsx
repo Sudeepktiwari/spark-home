@@ -18,6 +18,7 @@ const Footer = () => {
               type="text"
               placeholder="Enter your email address"
               className="bg-white"
+              autoFocus={false}
             />
             <Button className="bg-[#5555ff]">Subscribe</Button>
           </div>
