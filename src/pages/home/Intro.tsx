@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 // import Lottie from "lottie-react";
 import { Star } from "lucide-react";
-import introAnim from "../../assets/cursorful-video-1738917820781.mp4";
+import introAnim from "../../assets/New dark spark.mp4";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 // import { Skeleton } from "@/components/ui/skeleton";
@@ -91,7 +91,7 @@ const Intro = () => {
             —Easier and Faster Than Any Other!
           </p>
         </div>
-        <div className=" gap-2 lg:gap-8 items-center justify-center flex px-6 lg:py-8 lg:px-8 ">
+        <div className=" gap-2 lg:gap-8 items-center justify-center flex px-6 py-0 lg:py-8 lg:px-8 ">
           <Button
             className=" bg-[#5555ff] hover:bg-white hover:text-black text-[24px] 
             lg:w-[16vw] rounded-md lg:py-8 py-6 px-2 "
@@ -103,10 +103,10 @@ const Intro = () => {
             <p>Based on 10,000+ reviews</p>
           </div>
         </div>
-        <div className="py-5 justify-center flex">
+        <div className="pt-0 justify-center flex">
           {/* <Skeleton className="w-[90vw] lg:w-[90vw] h-[30vh] lg:h-[90vh] bg-gray-700" /> */}
           <video
-            className="w-[90vw] lg:w-[98vw]  h-[40vh] lg:h-[96vh]"
+            className="w-[90vw] lg:w-[98vw] h-[34vh] lg:h-[96vh]"
             autoPlay
             loop
             muted
