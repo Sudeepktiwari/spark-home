@@ -103,10 +103,10 @@ const Intro = () => {
             <p>Based on 10,000+ reviews</p>
           </div>
         </div>
-        <div className="py-10 justify-center flex">
+        <div className="py-5 justify-center flex">
           {/* <Skeleton className="w-[90vw] lg:w-[90vw] h-[30vh] lg:h-[90vh] bg-gray-700" /> */}
           <video
-            className="w-[98vw] h-[30vw] lg:h-[96vh]"
+            className="w-[90vw] lg:w-[98vw]  h-[40vh] lg:h-[96vh]"
             autoPlay
             loop
             muted

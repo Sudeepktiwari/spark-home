@@ -28,7 +28,9 @@ function App() {
     }
     document.title = "Spark Agent AI";
   }, []);
-
+  useEffect(() => {
+    window.scrollTo(0, 0); // Forces scroll to top on reload
+  }, []);
   return (
     <div
       className="main-body"
