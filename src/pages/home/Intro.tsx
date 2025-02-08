@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 // import Lottie from "lottie-react";
 import { Star } from "lucide-react";
-// import introAnim from "../../assets/NewImages/Final-videos/Desktop-hero-head-final.json";
+import introAnim from "../../assets/cursorful-video-1738917820781.mp4";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -55,7 +55,7 @@ const Intro = () => {
           }
         }
         // bg-[size:60%_50%]
-        className="lg:gap-6 lg:pt-8 items-center bg-black shadow-2xl"
+        className="lg:gap-6 lg:pt-8 items-center bg-gradient-to-b from-black to-gray-300 shadow-2xl"
       >
         <div className="">
           <p
@@ -104,7 +104,16 @@ const Intro = () => {
           </div>
         </div>
         <div className="py-10 justify-center flex">
-          <Skeleton className="w-[90vw] lg:w-[90vw] h-[30vh] lg:h-[90vh] bg-gray-700" />
+          {/* <Skeleton className="w-[90vw] lg:w-[90vw] h-[30vh] lg:h-[90vh] bg-gray-700" /> */}
+          <video
+            className="w-[98vw] h-[30vw] lg:h-[96vh]"
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source src={introAnim} type="video/mp4" />
+          </video>
         </div>
         {/* <div className="lg:w-[98vw] lg:h-[100vh]">
           <Lottie
