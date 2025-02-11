@@ -16,7 +16,7 @@ const FixedNavBar: React.FC<FixedNavBarProps> = ({
   onSetActiveButton,
 }) => {
   return (
-    <div className="flex justify-between pt-8 h-[13vh]">
+    <div className="flex justify-between pt-6 h-[11vh]">
       <div className="ml-4 text-lg">
         <p>Features: </p>
       </div>
