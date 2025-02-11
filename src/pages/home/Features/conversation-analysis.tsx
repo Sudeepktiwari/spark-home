@@ -15,7 +15,7 @@ const ConversationAnalysis = () => {
         className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] m-0 mx-0 py-0"
       />
       {/* <Skeleton className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] md:h-[90vh] my-10 lg:my-0 " /> */}
-      <div className="space-y-8 lg:w-[40vw] ">
+      <div className="space-y-8 lg:w-[40vw] mt-10 lg:mt-0">
         <div className="flex items-center">
           <Button
             variant={"outline"}
