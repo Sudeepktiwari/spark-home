@@ -55,7 +55,7 @@ const Intro = () => {
           }
         }
         // bg-[size:60%_50%]
-        className="lg:gap-6 lg:pt-[14vh] items-center bg-gradient-to-b from-black to-gray-300 shadow-2xl"
+        className="lg:gap-6 pt-[14vh] items-center bg-gradient-to-b from-black to-gray-300 shadow-2xl"
       >
         <div className="">
           <p

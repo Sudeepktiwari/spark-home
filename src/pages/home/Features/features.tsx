@@ -111,7 +111,7 @@ const Features = () => {
     <div className="bg-transparent w-[98vw] lg:w-auto ">
       {/* Mobile Menu - Show when scrolled past initial nav */}
       {isFeaturesNavVisible && (
-        <div className="lg:hidden fixed top-0 left-0 pl-4 z-50 mobile-menu-container w-full bg-white ">
+        <div className="lg:hidden fixed top-0 left-0 pl-4 pt-2.5 pb-2.5 z-50 mobile-menu-container w-full bg-white ">
           <div className="flex items-center">
             <div className="flex text-xl">Features: </div>
             <button
@@ -196,7 +196,7 @@ const Features = () => {
       )}
 
       {/* Initial FixedNavBar at the top */}
-      <div ref={featuresBarRef} className=" my-10 shadow-md">
+      <div ref={featuresBarRef} className=" my-5 shadow-md">
         <div className="hidden lg:block">
           <FixedNavBar
             personaRef={personaRef}
@@ -298,7 +298,7 @@ const Features = () => {
         <div ref={qnaRef} className="min-h-screen mt-10">
           <Qna />
         </div>
-        <div ref={conversationRef} className="min-h-screen mt-10">
+        <div ref={conversationRef} className="mb-0 pb-0 mt-10">
           <ConversationAnalysis />
         </div>
       </div>

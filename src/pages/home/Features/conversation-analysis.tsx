@@ -20,7 +20,7 @@ const ConversationAnalysis = () => {
           <Button
             variant={"outline"}
             className=" lg:w-[25vw] text-xl 2xl:text-2xl font-light rounded-full
-           border-gray-500 hover:bg-white z-0"
+           border-gray-500 hover:bg-white z-10"
           >
             Conversation Analysis
           </Button>
