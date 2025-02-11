@@ -55,7 +55,7 @@ const Intro = () => {
           }
         }
         // bg-[size:60%_50%]
-        className="lg:gap-6 lg:pt-8 items-center bg-gradient-to-b from-black to-gray-300 shadow-2xl"
+        className="lg:gap-6 lg:pt-[14vh] items-center bg-gradient-to-b from-black to-gray-300 shadow-2xl"
       >
         <div className="">
           <p
@@ -106,7 +106,7 @@ const Intro = () => {
         <div className="pt-0 justify-center flex">
           {/* <Skeleton className="w-[90vw] lg:w-[90vw] h-[30vh] lg:h-[90vh] bg-gray-700" /> */}
           <video
-            className="w-[90vw] lg:w-[98vw] h-[34vh] lg:h-[96vh]"
+            className="w-[90vw] lg:w-[98vw] h-[34vh] lg:h-[90vh] py-5"
             autoPlay
             loop
             muted
