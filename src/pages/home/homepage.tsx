@@ -1,3 +1,4 @@
+import Reviews from "@/components/review/reviews";
 import Trusted from "../trustedby/trustedby";
 import Benefits from "./Benefits/benefits";
 import ScrollingBanner from "./features-bar1";
@@ -22,6 +23,7 @@ const Homepage = () => {
       <Steps />
       <Features />
       <Benefits />
+      <Reviews />
       {/* <Footer /> */}
     </div>
   );
