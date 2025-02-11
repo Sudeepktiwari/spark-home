@@ -91,7 +91,7 @@ const Intro = () => {
             —Easier and Faster Than Any Other!
           </p>
         </div>
-        <div className=" gap-2 lg:gap-8 items-center justify-center flex px-6 py-0 lg:py-8 lg:px-8 ">
+        <div className=" gap-2 lg:gap-8 items-center justify-center flex px-6 py-0 lg:py-10 lg:px-8 ">
           <Button
             className=" bg-[#5555ff] hover:bg-white hover:text-black text-[24px] 
             lg:w-[16vw] rounded-md lg:py-8 py-6 px-2 "
