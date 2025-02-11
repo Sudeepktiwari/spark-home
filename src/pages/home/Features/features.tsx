@@ -208,7 +208,7 @@ const Features = () => {
             onSetActiveButton={handleSetActiveButton}
           />
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center relative bottom-2">
           <div
             className="lg:hidden
             mobile-menu-container py-2 w-full"
