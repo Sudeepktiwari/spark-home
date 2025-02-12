@@ -182,7 +182,7 @@ const Features = () => {
 
       {/* Desktop Fixed Navigation */}
       {isFeaturesNavVisible && (
-        <div className="hidden lg:block fixed top-0 left-0 w-full bg-white z-30 shadow-md">
+        <div className="hidden lg:block fixed top-0 lg:h-[13vh] left-0 w-full bg-white z-30 shadow-md">
           <FixedNavBar
             personaRef={personaRef}
             knowledgeBaseRef={knowledgeBaseRef}

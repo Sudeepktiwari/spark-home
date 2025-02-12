@@ -15,7 +15,7 @@ const Persona = () => {
       <div className="lg:w-[50vw]">
         <img
           src={personaAnim}
-          className="lg:w-[40vw] w-[90vw] h-auto lg:ml-20 shadow-lg lg:mt-3"
+          className="lg:w-[40vw] w-[90vw] h-auto lg:ml-20 shadow-lg lg:mt-4"
           // className="lg:h-[70vh] lg:w-[40vw] w-[90vw] h-[30vh] lg:mt-3 mx-0 py-0 lg:ml-20 shadow-lg"
         />
       </div>
@@ -64,7 +64,7 @@ const Persona = () => {
           <Badge>RFP:</Badge> Assists with Request for Proposal inquiries,
           streamlining business communication and responses (For internal team)
         </p> */}
-        <Button className="text-lg lg:p-6 font-thin">
+        <Button className="text-lg lg:p-6 font-thin relative top-4">
           Get Started <ChevronsRight />
         </Button>
       </div>
