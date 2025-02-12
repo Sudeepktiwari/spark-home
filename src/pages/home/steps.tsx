@@ -7,7 +7,7 @@ import stepsAnim from "../../assets/NewImages/3 Steps.json";
 
 const Steps = () => {
   return (
-    <div className="px-4 bg-gradient-to-b from-pink-50 to-purple-100 py-10 ">
+    <div className="px-4 bg-gradient-to-b from-white via-pink-50 to-purple-100 py-10 ">
       <h1
         className="text-center text-2xl lg:text-5xl lg:p-16 "
         style={{ fontWeight: 300 }}
