@@ -64,7 +64,7 @@ const Persona = () => {
           <Badge>RFP:</Badge> Assists with Request for Proposal inquiries,
           streamlining business communication and responses (For internal team)
         </p> */}
-        <Button className="text-lg lg:p-6 font-thin relative top-4">
+        <Button className="text-lg lg:p-6 font-thin relative top-20">
           Get Started <ChevronsRight />
         </Button>
       </div>
