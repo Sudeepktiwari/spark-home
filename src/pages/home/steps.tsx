@@ -7,7 +7,12 @@ import stepsAnim from "../../assets/NewImages/3 Steps.json";
 
 const Steps = () => {
   return (
-    <div className="px-4 bg-gradient-to-b from-white via-[#fefef2] to-[#fffdd2] py-10 ">
+    <div
+      className="px-4
+      bg-gradient-to-b from-white 
+      via-[#fefef2] to-[#fefef2] py-10
+    "
+    >
       <h1
         className="text-center text-2xl lg:text-5xl lg:p-16 "
         style={{ fontWeight: 300 }}
@@ -28,7 +33,7 @@ const Steps = () => {
           </div>
           <div className="flex items-center gap-2 mt-6 lg:mt-0">
             {/* <NumberCircleOne size={40} className="text-gray-500" /> */}
-            <img src={t1} alt="1" className="h-16 w-16" />
+            <img src={t1} alt="1" className="h-16 w-16 bg-white rounded-full" />
             <Button
               variant={"outline"}
               className=" text-xl py-4 rounded-full w-[60vw] lg:w-[20vw] border-gray-500 hover:bg-white 2xl:text-2xl"
@@ -43,7 +48,7 @@ const Steps = () => {
           </p>
           <div className="flex items-center gap-2 mt-6">
             {/* <NumberCircleTwo size={40} className="text-gray-500" /> */}
-            <img src={t2} alt="1" className="h-16 w-16" />
+            <img src={t2} alt="1" className="h-16 w-16 bg-white rounded-full" />
             <Button
               variant={"outline"}
               className=" text-xl py-4 rounded-full w-[60vw] lg:w-[20vw] border-gray-500 hover:bg-white 2xl:text-2xl"
@@ -60,7 +65,7 @@ const Steps = () => {
           </p>
           <div className="flex items-center gap-2 mt-6">
             {/* <NumberCircleThree size={40} className="text-gray-500" /> */}
-            <img src={t3} alt="1" className="h-16 w-16" />
+            <img src={t3} alt="1" className="h-16 w-16 bg-white rounded-full" />
 
             <Button
               variant={"outline"}

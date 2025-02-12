@@ -67,9 +67,9 @@ export default function ReviewSlider() {
   return (
     <div
       className="flex items-center justify-center bg-gradient-to-b
-     from-pink-50 to-purple-100 mt-10 h-[90vh] "
+     from-pink-50 to-purple-100 mt-10 h-[90vh]"
     >
-      <div className="review-block relative max-w-[80vw] lg:w-full p-6 bg-white h-[60vh] lg:h-[60vh] shadow-lg rounded-xl">
+      <div className="review-block relative max-w-[80vw] lg:w-full p-6 bg-white h-[60vh] lg:h-[70vh] shadow-lg rounded-xl">
         <div className="flex justify-end gap-2 z-30">
           <button
             onClick={prevReview}

@@ -33,7 +33,7 @@ function App() {
   }, []);
   return (
     <div
-      className="main-body"
+      className="main-body select-none"
       style={{ fontFamily: "Trebuchet MS" }}
       // style={{ fontFamily: "Manrope,sans-serif" }}
     >
