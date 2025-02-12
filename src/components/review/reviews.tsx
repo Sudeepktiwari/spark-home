@@ -93,12 +93,12 @@ export default function ReviewSlider() {
         </div>
         <div className="lg:relative lg:bottom-[390px] lg:left-[10px] pt-4 lg:pt-0">
           <h2
-            className="text-[28px] lg:text-[48px] leading-tight mb-1 font-bold bg-gradient-to-br from-purple-800
+            className="text-[22px] lg:text-[48px] leading-tight mb-1 font-bold bg-gradient-to-br from-purple-800
           to-blue-500 bg-clip-text text-transparent"
           >
             {reviews[currentIndex].quote}
           </h2>
-          <p className="text-[18px] lg:text-[32px] mt-2 text-gray-700">
+          <p className="text-[14px] lg:text-[32px] mt-2 text-gray-700">
             {reviews[currentIndex].description}
           </p>
         </div>
