@@ -10,7 +10,7 @@ import {
 
 const Benefits = () => {
   return (
-    <div className="pt-28 lg:space-y-4 px-4 mr-2">
+    <div className="pt-28 lg:space-y-4 px-4 lg:mr-4">
       <p className="flex text-2xl lg:text-5xl justify-center font-light">
         Deliver <span className=" text-orange-500 mx-4"> Value </span> on day
         one

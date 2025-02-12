@@ -12,10 +12,11 @@ const Persona = () => {
         autoplay
         loop
         animationData={personaAnim} */}
-      <div className="w-[50vw]">
+      <div className="lg:w-[50vw]">
         <img
           src={personaAnim}
-          className="lg:h-[70vh] lg:w-[40vw] w-[90vw] h-[30vh] lg:mt-3 mx-0 py-0 lg:ml-20 shadow-lg"
+          className="lg:w-[40vw] w-[90vw] h-auto lg:ml-20 shadow-lg lg:mt-3"
+          // className="lg:h-[70vh] lg:w-[40vw] w-[90vw] h-[30vh] lg:mt-3 mx-0 py-0 lg:ml-20 shadow-lg"
         />
       </div>
       {/* <Skeleton className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] md:h-[90vh]" /> */}
