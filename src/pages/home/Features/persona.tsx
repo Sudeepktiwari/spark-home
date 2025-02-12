@@ -2,17 +2,19 @@ import { Button } from "@/components/ui/button";
 // import { Skeleton } from "@/components/ui/skeleton";
 import { ChevronsRight } from "lucide-react";
 import t1 from "../../../assets/t1.png";
-import Lottie from "lottie-react";
-import personaAnim from "../../../assets/NewImages/Chatbot Type.json";
+// import Lottie from "lottie-react";
+import personaAnim from "../../../assets/Persona.png";
 
 const Persona = () => {
   return (
     <div className="lg:flex lg:mt-10 mt-0 lg:gap-10 ">
-      <Lottie
+      {/* <Lottie
         autoplay
         loop
-        animationData={personaAnim}
-        className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] m-0 mx-0 py-0"
+        animationData={personaAnim} */}
+      <img
+        src={personaAnim}
+        className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] m-0 mx-0 py-0 shadow-md"
       />
       {/* <Skeleton className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] md:h-[90vh]" /> */}
       <div className="space-y-6 lg:w-[40vw] mt-10 lg:mt-0 ">
