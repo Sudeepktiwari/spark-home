@@ -7,13 +7,13 @@ import stepsAnim from "../../assets/NewImages/3 Steps.json";
 
 const Steps = () => {
   return (
-    <div className="px-4 bg-gradient-to-b from-white via-pink-50 to-purple-100 py-10 ">
+    <div className="px-4 bg-gradient-to-b from-white via-orange-50 to-orange-100 py-10 ">
       <h1
         className="text-center text-2xl lg:text-5xl lg:p-16 "
         style={{ fontWeight: 300 }}
       >
-        Build Your Custom Chatbot{" "}
-        <span className="block lg:inline">in 3 Simple Steps</span>
+        Build Your Custom Chatbot in{" "}
+        <span className="block lg:inline text-orange-400">3 Simple Steps</span>
       </h1>
       <div className="flex flex-col lg:flex-row items-center mt-10 gap-0 lg:gap-20  ">
         <div className="space-y-[15px] lg:w-[30vw] ">
