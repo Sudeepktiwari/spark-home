@@ -3,29 +3,43 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 const reviews = [
   {
+    quote: "Reduces support times 70% and boosts resolution.",
+    description:
+      "Instant document access powers faster customer support and improved outcomes.",
+    name: "Mike",
+    designation: "Entrepreneur  ",
+    image:
+      "https://www.sparkagentai.com/_astro/Mike_cloudnine.e7a10897_Z6WWNs.webp",
+  },
+  {
     quote:
-      "Future of RFP/RFI/security questionnaire responses! Saves our team a ton of time.",
+      "Skyrockets productivity and makes tasks more manageable and enjoyable.",
     description:
-      "Lot of great features. User experience is extremely intuitive and the team is very responsive.",
-    name: "Ben H",
-    designation: "(Head of Solutions)",
-    image: "https://github.com/shadcn.png",
+      "Seamless organization makes work easier, more enjoyable, and highly efficient.",
+    name: "Emily",
+    designation: "HR Manager",
+    image:
+      "https://www.sparkagentai.com/_astro/headshot_placeholder.245d4076_BSzor.webp",
   },
   {
-    quote: "Amazing platform for handling business proposals efficiently!",
+    quote:
+      "Integration transformed our support system, boosting response times 250% and satisfaction by 40%.",
     description:
-      "The automation features save us a lot of time, and the UI is smooth and easy to navigate.",
-    name: "Sarah M",
-    designation: "(Project Manager)",
-    image: "https://github.com/shadcn.png",
+      "Smooth integration; AI chatbots now essential to our business operations.",
+    name: "Yajuvendra Singh",
+    designation: "Chief Support Officer at Appointy",
+    image:
+      "https://www.sparkagentai.com/_astro/yaju_singh_appointy.9560b589_Z1heGwb.webp",
   },
   {
-    quote: "A must-have tool for security compliance!",
+    quote:
+      "Revolutionizes our sales process: proposals 60% faster, win rate up 35%.",
     description:
-      "It simplifies compliance tasks and helps us stay on track with minimal effort.",
-    name: "John D",
-    designation: "(Security Analyst)",
-    image: "https://github.com/shadcn.png",
+      "AI-driven RFPs streamline sales, cutting proposal time and increasing success, now expanding company-wide.",
+    name: "Manish Gupta",
+    designation: "COO at Casefox",
+    image:
+      "https://www.sparkagentai.com/_astro/manish_gupta_casefox.9e749885_Z21pWTT.webp",
   },
 ];
 
@@ -56,7 +70,7 @@ export default function ReviewSlider() {
      from-pink-50 to-purple-100 mt-10 h-[90vh] "
     >
       <div className="review-block relative max-w-[80vw] lg:w-full p-6 bg-white h-[60vh] lg:h-[60vh] shadow-lg rounded-xl">
-        <div className="flex justify-end gap-2">
+        <div className="flex justify-end gap-2 z-30">
           <button
             onClick={prevReview}
             className="p-2 bg-gray-100 shadow hover:bg-gray-200"
@@ -73,7 +87,7 @@ export default function ReviewSlider() {
         </div>
         <div
           className="hidden lg:block text-[299px] text-purple-200 
-        relative bottom-[150px] right-[18px]"
+        relative bottom-[150px] right-[18px] pointer-events-none"
         >
           “
         </div>
@@ -89,10 +103,10 @@ export default function ReviewSlider() {
           </p>
         </div>
 
-        <p className=" absolute bottom-6 ml-2 font-semibold text-gray-900 align-bottom flex gap-4 items-center">
+        <p className=" absolute bottom-4 lg:ml-2 font-semibold text-gray-900 flex gap-4 items-center">
           <Avatar className="w-[60px] h-[60px]">
             <AvatarImage src={reviews[currentIndex].image} />
-            <AvatarFallback>CN</AvatarFallback>
+            <AvatarFallback>img</AvatarFallback>
           </Avatar>
           <div className="flex flex-col">
             <p>{reviews[currentIndex].name}</p>

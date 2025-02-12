@@ -22,8 +22,8 @@ const Homepage = () => {
       <Trusted />
       <Steps />
       <Features />
-      <Benefits />
       <Reviews />
+      <Benefits />
       {/* <Footer /> */}
     </div>
   );
