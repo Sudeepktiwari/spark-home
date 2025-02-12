@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 // import Lottie from "lottie-react";
 import { Star } from "lucide-react";
-import introAnim from "../../assets/New dark spark.mp4";
+import introAnim from "../../assets/Spark 12 feb.mp4";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 // import { Skeleton } from "@/components/ui/skeleton";
