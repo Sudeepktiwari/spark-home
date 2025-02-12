@@ -7,15 +7,17 @@ import personaAnim from "../../../assets/Persona.png";
 
 const Persona = () => {
   return (
-    <div className="lg:flex lg:mt-10 mt-0 lg:gap-10 ">
+    <div className="lg:flex lg:mt-10 mt-0 lg:gap-20 ">
       {/* <Lottie
         autoplay
         loop
         animationData={personaAnim} */}
-      <img
-        src={personaAnim}
-        className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] m-0 mx-0 py-0 shadow-md"
-      />
+      <div className="w-[50vw]">
+        <img
+          src={personaAnim}
+          className="lg:h-[70vh] lg:w-[40vw] w-[90vw] h-[30vh] lg:mt-3 mx-0 py-0 lg:ml-20 shadow-lg"
+        />
+      </div>
       {/* <Skeleton className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] md:h-[90vh]" /> */}
       <div className="space-y-6 lg:w-[40vw] mt-10 lg:mt-0 ">
         <div className="flex items-center">
