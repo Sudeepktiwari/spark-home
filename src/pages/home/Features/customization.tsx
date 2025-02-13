@@ -15,7 +15,7 @@ const Customization = () => {
           loop
           playsInline
           src={customizationAnim}
-          className="lg:h-[64vh] lg:w-[41vw] w-[90vw] h-auto object-cover shadow-lg"
+          className="shadow-lg"
         />
       </div>
 
