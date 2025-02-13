@@ -9,14 +9,13 @@ import customizationAnim from "../../../assets/BrandCust.webm";
 const Customization = () => {
   return (
     <div className="lg:flex lg:pt-24 gap-16">
-      <div className="relative lg:w-[50%] w-[85vw] lg:h-[64vh] h-[29vh] overflow-hidden flex justify-center ml-4">
+      <div className="lg:w-[50vw] pl-20">
         <video
           autoPlay
           loop
           playsInline
           src={customizationAnim}
-          className="lg:h-[64vh] lg:w-[41vw] w-[90vw] h-[30vh] lg:mt-3 m-0 mx-0 py-0 object-cover object-top lg:ml-20 lg:mr-10 
-          absolute top-0"
+          className="lg:h-[64vh] lg:w-[41vw] w-[90vw] h-auto object-cover shadow-lg"
         />
       </div>
 
