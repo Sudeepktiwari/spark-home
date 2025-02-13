@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 import t1 from "../../assets/t1.png";
 import t2 from "../../assets/t2.png";
 import t3 from "../../assets/t3.png";
-import Lottie from "lottie-react";
-import stepsAnim from "../../assets/NewImages/3 Steps.json";
+// import Lottie from "lottie-react";
+import stepsAnim from "../../assets/steps-vid.webm";
 
 const Steps = () => {
   return (
@@ -17,12 +17,13 @@ const Steps = () => {
       </h1>
       <div className="flex flex-col lg:flex-row items-center mt-10 gap-0 lg:gap-20  ">
         <div className="space-y-[15px] lg:w-[30vw] ">
-          <div className="flex lg:hidden justify-center">
-            <Lottie
-              autoplay
+          <div className="flex lg:hidden justify-center w-[90vw]">
+            <video
+              autoPlay
               loop
-              animationData={stepsAnim}
-              className="w-[90vw] h-[30vh] m-0 mx-0 py-0"
+              playsInline
+              src={stepsAnim}
+              className="w-[90vw] h-[30vh] m-0 mx-0 py-0 object-cover"
             />
             {/* <Skeleton className="h-[30vh] w-[90vw]" /> */}
           </div>
@@ -76,12 +77,13 @@ const Steps = () => {
             Then, get the integration code to easily add it to your website.
           </p>
         </div>
-        <div className="hidden lg:flex">
-          <Lottie
-            autoplay
+        <div className="hidden lg:flex w-[55vw]">
+          <video
+            autoPlay
             loop
-            animationData={stepsAnim}
-            className="lg:w-[55vw] lg:h-[80vh] m-0 mx-0 py-0"
+            playsInline
+            src={stepsAnim}
+            className="lg:w-[52vw] lg:h-[75vh] m-0 mx-0 py-0 object-cover mt-8"
           />
           {/* <Skeleton className="h-[80vh] w-[60vw]" /> */}
         </div>

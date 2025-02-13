@@ -7,7 +7,7 @@ import personaAnim from "../../../assets/Persona.png";
 
 const Persona = () => {
   return (
-    <div className="lg:flex lg:mt-10 mt-0 lg:gap-20 ">
+    <div className="lg:flex lg:mt-10 mt-0 lg:gap-14 ">
       {/* <Lottie
         autoplay
         loop

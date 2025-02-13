@@ -44,7 +44,7 @@ const Footer = () => {
       </div> */}
 
       <div className="grid grid-cols-2 lg:flex lg:flex-row pt-10 px-6 justify-around w-full lg:w-auto items-center">
-        <div className="footer-col navigation flex flex-col lg:pl-0 relative bottom-3 lg:bottom-0">
+        <div className="footer-col navigation flex flex-col lg:pl-0">
           <p className="font-semibold text-lg pb-4">Menu</p>
           <div className="footer-col-options">
             <p>Home</p>

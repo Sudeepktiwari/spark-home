@@ -7,7 +7,7 @@ import kbAnim from "../../../assets/knowledge base new.png";
 
 const KnowledgeBase = () => {
   return (
-    <div className="lg:flex lg:pt-24 gap-16 ">
+    <div className="lg:flex lg:pt-24 gap-14 ">
       {/* Lottie
       autoplay
       loop
