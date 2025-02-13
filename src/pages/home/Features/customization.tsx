@@ -3,20 +3,22 @@ import { Button } from "@/components/ui/button";
 import { ChevronsRight } from "lucide-react";
 import t1 from "../../../assets/t1.png";
 // import Lottie from "lottie-react";
-import customizationAnim from "../../../assets/BrandCust.webm";
+import customizationAnim from "../../../assets/newbrandc.mp4";
 // import { Card } from "@/components/ui/card";
 
 const Customization = () => {
   return (
     <div className="lg:flex lg:pt-24 gap-16">
-      <div className="lg:w-[50vw] pl-20">
+      <div className="relative lg:w-[50vw] h-[68vh] overflow-hidden pl-10">
         <video
+          className="w-[45vw] h-[70vh] object-cover translate-y-[-1%]"
           autoPlay
           loop
+          muted
           playsInline
-          src={customizationAnim}
-          className="shadow-lg"
-        />
+        >
+          <source src={customizationAnim} type="video/mp4" />
+        </video>
       </div>
 
       {/* <Skeleton className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] md:h-[90vh] my-10 lg:my-0 " /> */}
