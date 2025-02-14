@@ -11,7 +11,7 @@ const Customization = () => {
     <div className="lg:flex lg:pt-24 gap-16">
       <div className="relative lg:w-[50vw] h-[68vh] overflow-hidden pl-10">
         <video
-          className="w-[45vw] h-[70vh] object-cover translate-y-[-1%]"
+          className="w-[780px] h-[550px] object-cover translate-y-[-1%]"
           autoPlay
           loop
           muted
