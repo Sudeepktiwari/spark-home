@@ -9,9 +9,12 @@ import customizationAnim from "../../../assets/newbrandc.mp4";
 const Customization = () => {
   return (
     <div className="lg:flex lg:pt-24 gap-16">
-      <div className="relative lg:w-[50vw] lg:h-[500px] h-[216px] overflow-hidden lg:mt-4 lg:pl-14 pl-2">
+      <div
+        className="relative lg:w-[50vw] lg:h-[500px] w-[320px] h-[216px] overflow-hidden lg:mt-4 
+      lg:pl-14 pl-2 shadow-lg lg:shadow-none"
+      >
         <video
-          className="lg:w-[742px] lg:h-[520px] h-[220px] w-[342px] object-cover translate-y-[-1%]"
+          className="lg:w-[742px] lg:h-[520px] h-[220px] w-[342px] object-cover translate-y-[-1%] shadow-lg"
           autoPlay
           loop
           muted
