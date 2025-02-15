@@ -8,12 +8,17 @@ import conversationAnim from "../../../assets/NewImages/conversation.json";
 const ConversationAnalysis = () => {
   return (
     <div className="lg:flex lg:pt-24 gap-16 ">
-      <Lottie
-        autoplay
-        loop
-        animationData={conversationAnim}
-        className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] m-0 mx-0 py-0"
-      />
+      <div
+        className="relative lg:w-[50vw] lg:h-[400px] w-[320px] h-[216px] overflow-hidden lg:mt-4 
+      lg:pl-20 pl-2 shadow-lg lg:shadow-none"
+      >
+        <Lottie
+          autoplay
+          loop
+          animationData={conversationAnim}
+          className="lg:w-[590px] lg:h-[420px] h-[220px] w-[342px] object-cover translate-y-[-1%] shadow-lg"
+        />
+      </div>
       {/* <Skeleton className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] md:h-[90vh] my-10 lg:my-0 " /> */}
       <div className="space-y-8 lg:w-[40vw] mt-10 lg:mt-2">
         <div className="flex items-center">
