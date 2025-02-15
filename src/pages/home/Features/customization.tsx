@@ -10,11 +10,11 @@ const Customization = () => {
   return (
     <div className="lg:flex lg:pt-24 gap-16">
       <div
-        className="relative lg:w-[50vw] lg:h-[400px] h-[216px] overflow-hidden lg:mt-4 
-      lg:pl-20 pl-2 shadow-lg lg:shadow-none"
+        className="relative lg:w-[50vw] lg:h-[400px] w-[90vw] overflow-hidden lg:mt-4 
+      lg:pl-20 pl-2 shadow-lg lg:shadow-none justify-center"
       >
         <video
-          className="lg:w-[590px] lg:h-[420px] h-[220px] object-cover translate-y-[-1%] shadow-lg"
+          className="lg:w-[590px] lg:h-[420px] h-[31vh] w-[90vw] object-cover translate-y-[-1%] lg:shadow-lg"
           autoPlay
           loop
           muted

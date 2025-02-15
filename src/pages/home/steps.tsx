@@ -3,7 +3,7 @@ import t1 from "../../assets/t1.png";
 import t2 from "../../assets/t2.png";
 import t3 from "../../assets/t3.png";
 // import Lottie from "lottie-react";
-import stepsAnim from "../../assets/steps-vid.webm";
+import stepsAnim from "../../assets/sparktest.mp4";
 
 const Steps = () => {
   return (
@@ -23,7 +23,7 @@ const Steps = () => {
               loop
               playsInline
               src={stepsAnim}
-              className="w-[90vw] h-[30vh] m-0 mx-0 py-0 object-cover"
+              className="w-[90vw] h-[29vh] m-0 mx-0 py-0 object-cover"
             />
             {/* <Skeleton className="h-[30vh] w-[90vw]" /> */}
           </div>
