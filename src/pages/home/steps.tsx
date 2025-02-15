@@ -23,7 +23,7 @@ const Steps = () => {
               loop
               playsInline
               src={stepsAnim}
-              className="w-[90vw] h-[29vh] m-0 mx-0 py-0 object-cover"
+              className="w-[90vw] h-[30vh] m-0 mx-0 py-0 object-cover"
             />
             {/* <Skeleton className="h-[30vh] w-[90vw]" /> */}
           </div>
