@@ -28,7 +28,7 @@ const DropdownMenu: React.FC = () => {
         {isOpen ? (
           <X className="w-8 h-8" />
         ) : (
-          <Menu className="w-8 h-8 font-thin" />
+          <Menu strokeWidth={1} className="w-8 h-8 font-thin" />
         )}
       </button>
 
