@@ -3,7 +3,8 @@ import t1 from "../../assets/t1.png";
 import t2 from "../../assets/t2.png";
 import t3 from "../../assets/t3.png";
 // import Lottie from "lottie-react";
-import stepsAnim from "../../assets/sparktest.mp4";
+import stepsAnim from "../../assets/steps-vid.webm";
+import stepswAnim from "../../assets/sparktest.mp4";
 
 const Steps = () => {
   return (
@@ -22,9 +23,11 @@ const Steps = () => {
               autoPlay
               loop
               playsInline
-              src={stepsAnim}
+              muted
               className="w-[90vw] h-[30vh] m-0 mx-0 py-0 object-cover"
-            />
+            >
+              <source src={stepsAnim} type="video/mp4" />
+            </video>
             {/* <Skeleton className="h-[30vh] w-[90vw]" /> */}
           </div>
           <div className="flex items-center gap-2 mt-6 lg:mt-0">
@@ -82,9 +85,12 @@ const Steps = () => {
             autoPlay
             loop
             playsInline
+            muted
             src={stepsAnim}
             className="lg:w-[52vw] lg:h-[75vh] m-0 mx-0 py-0 object-cover mt-8"
-          />
+          >
+            <source src={stepswAnim} type="video/mp4" />
+          </video>
           {/* <Skeleton className="h-[80vh] w-[60vw]" /> */}
         </div>
       </div>
