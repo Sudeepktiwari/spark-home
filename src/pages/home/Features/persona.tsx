@@ -20,7 +20,7 @@ const Persona = () => {
         />
       </div>
       {/* <Skeleton className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] md:h-[90vh]" /> */}
-      <div className="space-y-6 lg:w-[40vw] mt-10 lg:mt-0 ">
+      <div className="relative space-y-6 lg:w-[40vw] mt-10 lg:mt-0 ">
         <div className="flex items-center">
           <Button
             variant={"outline"}
@@ -64,7 +64,7 @@ const Persona = () => {
           <Badge>RFP:</Badge> Assists with Request for Proposal inquiries,
           streamlining business communication and responses (For internal team)
         </p> */}
-        <Button className="text-lg lg:p-6 font-thin lg:relative lg:top-20">
+        <Button className="text-lg lg:p-6 font-thin lg:absolute lg:bottom-0">
           Get Started <ChevronsRight />
         </Button>
       </div>

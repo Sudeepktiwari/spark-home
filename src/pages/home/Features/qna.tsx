@@ -20,7 +20,7 @@ const Qna = () => {
         />
       </div>
       {/* <Skeleton className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] md:h-[90vh] my-10 lg:my-0 " /> */}
-      <div className="space-y-8 lg:w-[40vw] mt-10 lg:mt-2">
+      <div className="relative space-y-8 lg:w-[40vw] mt-10 lg:mt-2">
         <div className="flex items-center">
           <Button
             variant={"outline"}
@@ -48,7 +48,7 @@ const Qna = () => {
           Your chatbot evolves with every conversation, ensuring smarter and
           more effective support for your customers.
         </p>
-        <Button className="text-lg lg:p-6 font-thin">
+        <Button className="text-lg lg:p-6 font-thin lg:absolute lg:bottom-0">
           Get Started <ChevronsRight />
         </Button>
       </div>
