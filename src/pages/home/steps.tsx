@@ -80,7 +80,7 @@ const Steps = () => {
             Then, get the integration code to easily add it to your website.
           </p>
         </div>
-        <div className="hidden lg:flex w-[55vw]">
+        <div className="hidden lg:flex w-[52vw]">
           <video
             autoPlay
             loop
