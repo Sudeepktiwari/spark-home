@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronsRight } from "lucide-react";
 import t1 from "../../../assets/t1.png";
 import Lottie from "lottie-react";
-import conversationAnim from "../../../assets/NewImages/conversation.json";
+import conversationAnim from "../../../assets/NewImages/chat summary.json";
 
 const ConversationAnalysis = () => {
   return (
