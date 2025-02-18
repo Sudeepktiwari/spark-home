@@ -10,11 +10,11 @@ const Customization = () => {
   return (
     <div className="lg:flex lg:pt-24 gap-16">
       <div
-        className="relative lg:w-[50vw] lg:h-[56vh] w-[90vw] overflow-hidden lg:mt-4 
+        className="relative lg:w-[50vw] lg:h-[80vh] w-[90vw] overflow-hidden lg:mt-4 
       lg:pl-20 pl-2 shadow-lg lg:shadow-none justify-center"
       >
         <video
-          className="lg:w-[41vw] lg:h-[59vh] h-[31.5vh] w-[90vw] object-cover translate-y-[-1%] lg:shadow-lg"
+          className="lg:w-[40vw] lg:h-[58\vh] h-[31.5vh] w-[90vw] object-cover translate-y-[-1%] lg:shadow-lg"
           autoPlay
           loop
           muted
@@ -25,7 +25,7 @@ const Customization = () => {
       </div>
 
       {/* <Skeleton className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] md:h-[90vh] my-10 lg:my-0 " /> */}
-      <div className="relative space-y-8 lg:w-[40vw] mt-10 lg:mt-2">
+      <div className="space-y-8 lg:w-[40vw] mt-10 lg:mt-2">
         <div className="flex items-center">
           <Button
             variant={"outline"}
@@ -50,7 +50,7 @@ const Customization = () => {
           and responses to create a unique and engaging experience across all
           customer touchpoints.
         </p>
-        <Button className="text-lg lg:p-6 font-thin lg:absolute lg:bottom-0">
+        <Button className="text-lg lg:p-6 font-thin">
           Get Started <ChevronsRight />
         </Button>
       </div>
