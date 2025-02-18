@@ -131,8 +131,8 @@ const Intro = () => {
         <img src={imglightbg} alt="Background" />
         </div> */}
       </div>
-      <div className="lg:flex items-center py-10 bg-gray-300 ">
-        <p className="flex items-center text-sm lg:text-lg text-center px-4 lg:px-20 text-gray-500 ">
+      <div className="lg:flex items-center py-10 bg-gray-300 justify-center ">
+        <p className="flex items-center text-sm lg:text-lg text-center px-4 text-gray-500 ">
           Quickly Build Smart AI Chatbots to Scale Your Support and Boost Sales.
           SparkAgentAI automates interactions for customer support, lead
           qualification, and more—delivering instant value from day one.

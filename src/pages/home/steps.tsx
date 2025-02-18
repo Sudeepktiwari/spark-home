@@ -8,7 +8,7 @@ import stepswAnim from "../../assets/sparktest.mp4";
 
 const Steps = () => {
   return (
-    <div className="px-4 bg-white">
+    <div className="px-[5vw] bg-white">
       <h1
         className="text-center text-2xl lg:text-5xl lg:p-16 "
         style={{ fontWeight: 300 }}

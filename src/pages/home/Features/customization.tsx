@@ -14,7 +14,7 @@ const Customization = () => {
       lg:pl-20 pl-2 shadow-lg lg:shadow-none justify-center"
       >
         <video
-          className="lg:w-[42vw] lg:h-[65vh] h-[31.5vh] w-[90vw] object-cover translate-y-[-1%] lg:shadow-lg"
+          className="lg:w-[40vw] lg:h-[58\vh] h-[31.5vh] w-[90vw] object-cover translate-y-[-1%] lg:shadow-lg"
           autoPlay
           loop
           muted

@@ -9,14 +9,14 @@ const Qna = () => {
   return (
     <div className="lg:flex lg:pt-24 gap-16 ">
       <div
-        className="lg:w-[50vw] lg:h-[400px] w-[320px] h-[220px] overflow-hidden lg:mt-4 
+        className="lg:w-[50vw] w-[320px] overflow-hidden lg:mt-4 
       lg:pl-20 pl-0 shadow-lg lg:shadow-none"
       >
         <Lottie
           autoplay
           loop
           animationData={qnaAnim}
-          className="lg:w-[590px] lg:h-[420px] h-[220px] w-[320px] object-cover lg:shadow-lg"
+          className="lg:w-[41vw] lg:h-[60vh] h-[220px] w-[320px] object-cover lg:shadow-lg"
         />
       </div>
       {/* <Skeleton className="lg:h-[80vh] lg:w-[50vw] w-[90vw] h-[30vh] md:h-[90vh] my-10 lg:my-0 " /> */}
